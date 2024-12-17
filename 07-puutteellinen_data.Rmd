@@ -1,0 +1,168 @@
+# Puutteellista dataa?
+
+Tieteellisten artikkelien *Methods*-osuudessa useimmiten kuvataan, että ennen analyysejä suljettiin pois kaikki sellaiset tutkittavat, joiden kohdalla oli puuttuvaa dataa jonkun tutkittavan biomarkkerin suhteen.
+
+Harjoitellaan seuraavassa vielä tätä. Luodaan itse pari autoa *dplyr*:in käskyillä datasettiimme, mutta tehdään tämä niin, että näissä kahdessa autossa on puuttuvaa dataa. (Huom! Sinun ei tarvitse tässä vaiheessa opetella datarivin lisäämistä tai rivin nimen muuttamista seuraavasta koodista - riittää kun kopioit koodit omaan skriptiisi *minun_datani.R*.)
+
+```
+# 1.
+#
+# Luodaan auto, jolle ei määritetä massaa.
+# Massa saa automaattisesti R:ssä siksi arvon NA (not available eli missing data).
+# Tallennetaan koko uusi automobiilisetti datasettiin "automobiilit3":
+
+automobiilit3 <- automobiilit2 %>%
+  add_row(bensankulutus = 30.7,
+          hevosvoima = 67,
+          vaihteisto = 1)
+
+#Annetaan viimeisen rivin (eli auton) nimeksi "Lada":
+
+row.names(automobiilit3)[nrow(automobiilit3)] <- "Лада"     
+
+
+
+# 2.
+#  
+# Luodaan seuraava auto, joka saa DDR:n historiaa henkivän nimen "Trabant".
+# Annetaan massaksi selvästi virheellinen arvo 0 kiloa.
+# Tallennetaan koko automobiilisetti datasetin "automobiili3" päälle:
+
+automobiilit3 <- automobiilit3 %>%
+  add_row(bensankulutus = 34.6,  
+          hevosvoima = 23,    
+          massa = 0,           
+          vaihteisto = 1)
+
+row.names(automobiilit3)[nrow(automobiilit3)] <- "Trabant"  
+
+```
+
+<br>
+
+Voit tarkastella luotua dataa jälleen kirjoittamalla konsoliin käskyn:
+
+
+``` View(automobiilit3) ```
+
+Näet autojen listan lopussa kaksi uutta riviä, joilla on puuttuvaa/virheellistä dataa sarakkeessa "massa" (tässä näkyy vain 6 viimeistä riviä):
+
+<br>
+
+
+```{r puuttuvadata, echo=FALSE}
+
+kable(tail(automobiilit3))
+```
+
+
+## Puutteellisen datan poisto
+
+Virheellistä dataa voi poistaa seuraavin vaihein:
+
+1. vaihe: *NA*-arvoja (not available) sisältävien rivien poisto
+2. vaihe: epäadekvaattia dataa sisältävien rivien poisto (esim. massa ei voi olla 0 kg)
+
+Käytännössä vaiheen 2 toteutus vie myös kohdassa yksi mainitut *NA*-arvoa sisältävät rivit mennessään, kun käytetään *dplyr*-paketin *filter*-käskyä, joka tuli jo edellä tutuksi.
+
+Demonstroidaan tämä seuraavilla koodiriveillä (voit kirjoittaa nämä *minun_datani.R*-skriptiin ja ajaa siinä painamalla Cmd+Enter):
+
+
+```
+# 1. vaihe:
+#
+# Näytetään datamme, kun NA'ta sisältäneet rivit on poistettu.
+# Huom! Uutta datasettiä ei luoda, sillä emme käske dataa
+# operaattorilla <- siirrettäväksi mihinkään uuteen datasettiin.
+# Eli seuraava koodi vain ikään kuin näyttää minkälainen datasetti
+# meille tulisi, jos ohjaisimme koodin eteenpäin uuteen datasettiin
+# käyttämällä operaattoria <- ja antamalla uudelle datasetille jonkun
+# nimen, esim. "automobiilit4":
+
+automobiilit3 %>% na.omit
+```
+
+<br>
+
+Kuten alla näet (tulostettuna vain 6 viimeistä riviä), *NA*-arvoa sisältänyt Lada häviäisi, mutta Trabant jäisi jäljelle:
+
+
+```{r data_ilman_na_ta, echo=FALSE}
+
+# Poistetaan NA-arvoa sisältävät rivit:
+
+tail(automobiilit3 %>% na.omit)
+
+```
+
+<br>
+
+Kokeillaan nyt vaihetta 2 eli poistaa muuttujat, jotka eivät saa jotakin järjellistä arvoa, ja katsotaan miten käy. Huom! Taaskaan emme tallenna tätä ajoa mihinkään uuteen datasettiin, koska emme käytä operaattoria <- piiputettujen käskyjen alussa (tai lopussa). Voit kirjoittaa seuraavat rivit *minun_datani.R*-skriptiin ja ajaa siinä painamalla Cmd+Enter:
+
+
+```
+# 2. vaihe:
+#
+# Säilytetään vain autot, joiden muuttujat saavat "sallittuja", järjellisiä arvoja.
+# Jälleen: emme tee uutta datasettiä vaan ainoastaan demonstroimme minkälainen datasetti
+# tulisi, jos loisimme tässä uuden datasetin.
+
+automobiilit3 %>%
+                    filter(bensankulutus > 0,
+                           hevosvoima > 0,
+                           massa > 0,
+                           vaihteisto %in% c(0,1))
+```
+
+<br>
+
+Huomaat, että vaiheen 2 käsky vie suoraan sekä *NA*'ta sisältäneen Ladan että "nollamassan" sisältäneen Trabantin mennessään (tässä alla näytettynä vain 4 viimeistä riviä tulosteesta):
+
+
+```{r data_ilman_epaadekvaattia, echo=FALSE}
+
+# Poistetaan NA-arvoa sisältävät rivit:
+
+automobiilit3 %>%
+                    filter(bensankulutus > 0,
+                           hevosvoima > 0,
+                           massa > 0,
+                           vaihteisto %in% c(0,1)) %>% tail(.,n=4)
+
+```
+
+<br>
+
+Jos ja kun käytämme *dplyr*:n *filter*-komentoa, strategiamme on:
+
+- Valitsemme yltä suoraan vaiheen 2 *filter*-käskyn, joka poistaa sekä *NA*:t että "nollamassat"
+
+Luodaan samalla uusi, vain adekvaattia dataa sisältävä datasetti "automobiilit4". Kirjoita seuraavat rivit *minun_datani.R*-skriptiin ja aja siinä painamalla Cmd+Enter:
+
+```
+
+# Poistetaan rivit joilla epäadekvaattia dataa tai NA:ta.
+# Tallennetaan tällainen koko automobiilisetti
+# uuteen datasettiin "automobiilit4":
+
+automobiilit4 <- automobiilit3 %>%
+  filter(bensankulutus > 0,
+         hevosvoima > 0,
+         massa > 0,
+         vaihteisto %in% c(0,1))
+
+```
+
+<br>
+
+Kun tarkastelet datasettiä kirjoittamalla konsoliin käskyn ``` View(automobiilit4) ``` huomaat, että datasetti on nyt siistitty puuttuvasta/virheellisestä datasta (alla näkyy vain 4 viimeistä riviä):
+
+
+```{r missingdatakorjattutail, echo=FALSE}
+
+tail(automobiilit4, n=4) %>% kable()
+
+```
+
+<br>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://vldesign.kapsi.fi/r/">R-opas</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.linkedin.com/in/ville-langen">Ville Langén</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

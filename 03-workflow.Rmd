@@ -1,0 +1,20 @@
+# Workflow R:llä työskennellessä
+
+R:llä työskennellessä workflow kulkee usein seuraavasti:
+
+1. tutkimusdata valmistellaan "paljailla" R-skripteillä
+2. tilastoajot tehdään sitten suoraan R Markdown -dokumentissa
+
+Workflow'n jako R-skripteihin ja R Markdown -dokumentteihin on toki täysin vapaata ja yksilöllistä - toiset tekevät kaiken tai lähes kaiken suoraan R Markdown -dokumenteissa, toiset taas tekevät vain varsinaiset tilastoanalyysit ja visualisoinnit R Markdownin puolella.
+
+Voit kysellä, että mitä hyötyä on ajaa tilastoajot R Markdown -dokumentissa. Vastaan seuraavasti.
+
+Kuvittele tilannetta, jossa kirjoittaisit MS Wordilla kollegoillesi raporttia, jossa olisi tekstin ohella useita taulukoita ja kuvaajia. Jos tutkimustyön ohjaajasi huomaisi jonkun virheen ja pyytäisi sinua korjaamaan dataasi, sinun pitäisi korjausten jälkeen yksi kerrallaan ladata uudet taulukot ja kuvaajat MS Word -dokumenttiin. (Toim. huom.: "Been there, done that... 😭") R Markdown -dokumentissa tälle ei ole tarvetta: taulukot ja kuvaajat päivittyvät automaattisesti, jos muutat jotakin datassasi.
+
+Halutessasi voit milloin vain sementoida R Markdownilla kirjoittamasi tekstin kuvaajineen valmiiksi ja jakaa sen vaikka juuri MS Word -muodossa kollegoillesi - tai PDF:nä.
+
+Kolmas vaihtoehto on tehdä kuten tein tämän tekstin kanssa, jota juuri luet todennäköisesti web-muodossa: päätin kääntää sen HTML:ksi, jotta sain tehtyä tästä pikaoppaasta verkkosivut.
+
+
+<br>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://vldesign.kapsi.fi/r/">R-opas</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.linkedin.com/in/ville-langen">Ville Langén</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

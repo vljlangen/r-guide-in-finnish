@@ -1,0 +1,25 @@
+
+# R-kieli
+
+**R** on ohjelmointikieli, jonka saa asennettua tietokoneelleen **ilmaiseksi** ja jolla saa tehtyä **paitsi tilastoajot myös kuvaajat** tieteellistä artikkelia laadittaessa.
+
+Jos tutkijan valinta on vapaa, rohkenen suositella, että aloitteleva tutkija aloittaa nykyään suoraan R:stä. Vaikka osaisi jo esim. SASia tai SPSS:ää, R:ää kannattaa opetella hieman jo pelkästään kuvaajien tekoa varten.
+
+R:n etuja:
+
+1. ilmainen
+2. asennus helppoa
+3. kevyt - vie vähän tilaa tietokoneelta
+3. käyttöapua saa nopeasti ja helposti internetistä
+4. kuvaajien tekoon erinomainen
+5. yksinäänkin riittää tavanomaisen väitöskirjan analyyseihin
+
+Ihan "karvalakkina" koodattava R-kieli (ns. Base-R) on mielestäni hieman luotaantyötävää.
+
+Mutta kun R-kieltä laaditaan lisäosan, ns. *dplyr*-paketin kanssa, koodia on hyvin helppo aloittelijankin tehdä ja koodin ymmärtäminen on intuitiivista.
+
+Tässä pikaohjeessa pyritään tekemään kaikki mahdollinen *dplyr*-paketin kanssa. *dplyr:ista* paljon lisää tuonnempana.
+
+
+<br>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://vldesign.kapsi.fi/r/">R-opas</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.linkedin.com/in/ville-langen">Ville Langén</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

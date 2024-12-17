@@ -1,0 +1,55 @@
+---
+title: "R-opas"
+documentclass: book
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        scroll_highlight: yes
+        before: |
+          <li><a href="https://vldesign.kapsi.fi/r-guide-in-english/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
+        after: |
+          <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
+author: Ville Langén
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+source("minun_datani.R")
+```
+
+<br>
+<br>
+<br>
+
+# Alkusanat
+
+Tässä pikaohjeessa opastetaan, miten:
+
+1. asennat Maciin R-ohjelmointikielen
+2. asennat Maciin RStudio-ohjelman, jolla teet tilastoajoja
+3. teet helppoja tilastoanalyysejä kirjoittamalla R- ja R Markdown -koodia
+
+Älä huolestu, jos et tajunnut yllä olevasta paljoakaan. Aiempaa kokemusta tilastollisesta analyysista et tarvitse.
+
+Suunnitelmissani on vielä tehdä todellinen pikaversio tästä ohjeesta hätähousuille. Tuossa versiossa kurssin pakinat ohitetaan suoraan ja päästetään lukija tekemään yksinään analyysejä valmiiksi tekemilläni sabluunoilla.
+
+Disclaimer: olen itse puhdas kliinikko, ja nämä verkkosivut heijastavat lähinnä omia kokemuksiani tilastoajoista biostatistiikassa. Statistiikan käsitteitä tuon tässä esille varsin anekdotaalisesti. Voit opetella omien käyttötarkoituksiesi mukaisesti lisää tilastotiedettä ja R:n käyttöä esim. internetistä.
+
+<br>
+
+Tämä opas on saatavilla myös [englanniksi](https://vldesign.kapsi.fi/r-guide-in-english/): this short guide is available also [in English](https://vldesign.kapsi.fi/r-guide-in-english/). 
+
+<br>
+
+Kiitokset:<br>
+Esitän lämpimät kiitokset LT Joonatan Palmulle tämän R-oppaan tarkastamisesta. Joonatan on ystävällisesti lisäksi laatinut tähän oppaaseen liiteosion, jossa käsitellään versionhallintaa. Suosittelen perehtymään aiheeseen lukemalla liiteosion heti tämän pikaoppaan jatkeeksi.
+
+<br>
+<br>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://vldesign.kapsi.fi/r/">R-opas</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.linkedin.com/in/ville-langen">Ville Langén</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
