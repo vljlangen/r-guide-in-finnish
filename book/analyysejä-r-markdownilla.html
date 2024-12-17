@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>14 Analyysejä R Markdownilla | R-opas</title>
   <meta name="description" content="14 Analyysejä R Markdownilla | R-opas" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="14 Analyysejä R Markdownilla | R-opas" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="r-markdownin-luonti.html"/>
 <link rel="next" href="lopuksi.html"/>
-<script src="libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -94,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -121,6 +119,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 </head>
 
@@ -134,97 +136,97 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://vldesign.kapsi.fi/r-guide-in-english/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
+<li><a href="https://r-guide-in-english.netlify.app/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Alkusanat<span></span></a></li>
-<li class="chapter" data-level="2" data-path="r-kieli.html"><a href="r-kieli.html"><i class="fa fa-check"></i><b>2</b> R-kieli<span></span></a></li>
-<li class="chapter" data-level="3" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>3</b> R Markdown<span></span></a></li>
-<li class="chapter" data-level="4" data-path="workflow-rllä-työskennellessä.html"><a href="workflow-rllä-työskennellessä.html"><i class="fa fa-check"></i><b>4</b> Workflow R:llä työskennellessä<span></span></a></li>
-<li class="chapter" data-level="5" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html"><i class="fa fa-check"></i><b>5</b> Asennus tietokoneelle<span></span></a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Alkusanat</a></li>
+<li class="chapter" data-level="2" data-path="r-kieli.html"><a href="r-kieli.html"><i class="fa fa-check"></i><b>2</b> R-kieli</a></li>
+<li class="chapter" data-level="3" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>3</b> R Markdown</a></li>
+<li class="chapter" data-level="4" data-path="workflow-rllä-työskennellessä.html"><a href="workflow-rllä-työskennellessä.html"><i class="fa fa-check"></i><b>4</b> Workflow R:llä työskennellessä</a></li>
+<li class="chapter" data-level="5" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html"><i class="fa fa-check"></i><b>5</b> Asennus tietokoneelle</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html#r-kielen-asennus"><i class="fa fa-check"></i><b>5.1</b> R-kielen asennus<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html#rstudion-asennus"><i class="fa fa-check"></i><b>5.2</b> RStudion asennus<span></span></a></li>
+<li class="chapter" data-level="5.1" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html#r-kielen-asennus"><i class="fa fa-check"></i><b>5.1</b> R-kielen asennus</a></li>
+<li class="chapter" data-level="5.2" data-path="asennus-tietokoneelle.html"><a href="asennus-tietokoneelle.html#rstudion-asennus"><i class="fa fa-check"></i><b>5.2</b> RStudion asennus</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="r-skriptit.html"><a href="r-skriptit.html"><i class="fa fa-check"></i><b>6</b> R-skriptit<span></span></a>
+<li class="chapter" data-level="6" data-path="r-skriptit.html"><a href="r-skriptit.html"><i class="fa fa-check"></i><b>6</b> R-skriptit</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="r-skriptit.html"><a href="r-skriptit.html#rstudion-perusnäkymä"><i class="fa fa-check"></i><b>6.1</b> RStudion perusnäkymä<span></span></a></li>
-<li class="chapter" data-level="6.2" data-path="r-skriptit.html"><a href="r-skriptit.html#r-skriptin-luonti"><i class="fa fa-check"></i><b>6.2</b> R-skriptin luonti<span></span></a></li>
-<li class="chapter" data-level="6.3" data-path="r-skriptit.html"><a href="r-skriptit.html#dplyr-paketin-lataus"><i class="fa fa-check"></i><b>6.3</b> dplyr-paketin lataus<span></span></a></li>
+<li class="chapter" data-level="6.1" data-path="r-skriptit.html"><a href="r-skriptit.html#rstudion-perusnäkymä"><i class="fa fa-check"></i><b>6.1</b> RStudion perusnäkymä</a></li>
+<li class="chapter" data-level="6.2" data-path="r-skriptit.html"><a href="r-skriptit.html#r-skriptin-luonti"><i class="fa fa-check"></i><b>6.2</b> R-skriptin luonti</a></li>
+<li class="chapter" data-level="6.3" data-path="r-skriptit.html"><a href="r-skriptit.html#dplyr-paketin-lataus"><i class="fa fa-check"></i><b>6.3</b> dplyr-paketin lataus</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html"><i class="fa fa-check"></i><b>7</b> Esimerkkidatasetti<span></span></a>
+<li class="chapter" data-level="7" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html"><i class="fa fa-check"></i><b>7</b> Esimerkkidatasetti</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html#datan-muokkaus-dplyrilla"><i class="fa fa-check"></i><b>7.1</b> Datan muokkaus dplyr:illa<span></span></a></li>
-<li class="chapter" data-level="7.2" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html#kertausta-dplyrista"><i class="fa fa-check"></i><b>7.2</b> Kertausta dplyr:ista<span></span></a></li>
+<li class="chapter" data-level="7.1" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html#datan-muokkaus-dplyrilla"><i class="fa fa-check"></i><b>7.1</b> Datan muokkaus dplyr:illa</a></li>
+<li class="chapter" data-level="7.2" data-path="esimerkkidatasetti.html"><a href="esimerkkidatasetti.html#kertausta-dplyrista"><i class="fa fa-check"></i><b>7.2</b> Kertausta dplyr:ista</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="puutteellista-dataa.html"><a href="puutteellista-dataa.html"><i class="fa fa-check"></i><b>8</b> Puutteellista dataa?<span></span></a>
+<li class="chapter" data-level="8" data-path="puutteellista-dataa.html"><a href="puutteellista-dataa.html"><i class="fa fa-check"></i><b>8</b> Puutteellista dataa?</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="puutteellista-dataa.html"><a href="puutteellista-dataa.html#puutteellisen-datan-poisto"><i class="fa fa-check"></i><b>8.1</b> Puutteellisen datan poisto<span></span></a></li>
+<li class="chapter" data-level="8.1" data-path="puutteellista-dataa.html"><a href="puutteellista-dataa.html#puutteellisen-datan-poisto"><i class="fa fa-check"></i><b>8.1</b> Puutteellisen datan poisto</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="datasettien-tuhoaminen.html"><a href="datasettien-tuhoaminen.html"><i class="fa fa-check"></i><b>9</b> Datasettien tuhoaminen<span></span></a></li>
-<li class="chapter" data-level="10" data-path="muunnosmuuttujat.html"><a href="muunnosmuuttujat.html"><i class="fa fa-check"></i><b>10</b> Muunnosmuuttujat<span></span></a></li>
-<li class="chapter" data-level="11" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html"><i class="fa fa-check"></i><b>11</b> Kategoriset muuttujat<span></span></a>
+<li class="chapter" data-level="9" data-path="datasettien-tuhoaminen.html"><a href="datasettien-tuhoaminen.html"><i class="fa fa-check"></i><b>9</b> Datasettien tuhoaminen</a></li>
+<li class="chapter" data-level="10" data-path="muunnosmuuttujat.html"><a href="muunnosmuuttujat.html"><i class="fa fa-check"></i><b>10</b> Muunnosmuuttujat</a></li>
+<li class="chapter" data-level="11" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html"><i class="fa fa-check"></i><b>11</b> Kategoriset muuttujat</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html#as.factor-käsky"><i class="fa fa-check"></i><b>11.1</b> as.factor-käsky<span></span></a></li>
-<li class="chapter" data-level="11.2" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html#tibble"><i class="fa fa-check"></i><b>11.2</b> tibble<span></span></a></li>
+<li class="chapter" data-level="11.1" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html#as.factor-käsky"><i class="fa fa-check"></i><b>11.1</b> as.factor-käsky</a></li>
+<li class="chapter" data-level="11.2" data-path="kategoriset-muuttujat.html"><a href="kategoriset-muuttujat.html#tibble"><i class="fa fa-check"></i><b>11.2</b> tibble</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="koko-valmis-esimerkkidata.html"><a href="koko-valmis-esimerkkidata.html"><i class="fa fa-check"></i><b>12</b> Koko valmis esimerkkidata<span></span></a></li>
-<li class="chapter" data-level="13" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html"><i class="fa fa-check"></i><b>13</b> R Markdownin luonti<span></span></a>
+<li class="chapter" data-level="12" data-path="koko-valmis-esimerkkidata.html"><a href="koko-valmis-esimerkkidata.html"><i class="fa fa-check"></i><b>12</b> Koko valmis esimerkkidata</a></li>
+<li class="chapter" data-level="13" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html"><i class="fa fa-check"></i><b>13</b> R Markdownin luonti</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#kääntö-lopputuotokseksi"><i class="fa fa-check"></i><b>13.1</b> Kääntö lopputuotokseksi<span></span></a></li>
-<li class="chapter" data-level="13.2" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#yaml-otsikko"><i class="fa fa-check"></i><b>13.2</b> YAML-otsikko<span></span></a></li>
-<li class="chapter" data-level="13.3" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#r-markdownilla-kirjoittaminen"><i class="fa fa-check"></i><b>13.3</b> R Markdownilla kirjoittaminen<span></span></a></li>
-<li class="chapter" data-level="13.4" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#chunkit"><i class="fa fa-check"></i><b>13.4</b> “Chunkit”<span></span></a></li>
-<li class="chapter" data-level="13.5" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#ensimmäinen-chunk"><i class="fa fa-check"></i><b>13.5</b> Ensimmäinen chunk<span></span></a></li>
+<li class="chapter" data-level="13.1" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#kääntö-lopputuotokseksi"><i class="fa fa-check"></i><b>13.1</b> Kääntö lopputuotokseksi</a></li>
+<li class="chapter" data-level="13.2" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#yaml-otsikko"><i class="fa fa-check"></i><b>13.2</b> YAML-otsikko</a></li>
+<li class="chapter" data-level="13.3" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#r-markdownilla-kirjoittaminen"><i class="fa fa-check"></i><b>13.3</b> R Markdownilla kirjoittaminen</a></li>
+<li class="chapter" data-level="13.4" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#chunkit"><i class="fa fa-check"></i><b>13.4</b> “Chunkit”</a></li>
+<li class="chapter" data-level="13.5" data-path="r-markdownin-luonti.html"><a href="r-markdownin-luonti.html#ensimmäinen-chunk"><i class="fa fa-check"></i><b>13.5</b> Ensimmäinen chunk</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html"><i class="fa fa-check"></i><b>14</b> Analyysejä R Markdownilla<span></span></a>
+<li class="chapter" data-level="14" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html"><i class="fa fa-check"></i><b>14</b> Analyysejä R Markdownilla</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#datasetin-tarkastelu"><i class="fa fa-check"></i><b>14.1</b> Datasetin tarkastelu<span></span></a>
+<li class="chapter" data-level="14.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#datasetin-tarkastelu"><i class="fa fa-check"></i><b>14.1</b> Datasetin tarkastelu</a>
 <ul>
-<li class="chapter" data-level="14.1.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#head-komento"><i class="fa fa-check"></i><b>14.1.1</b> head-komento<span></span></a></li>
-<li class="chapter" data-level="14.1.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#kable-kaunistaa"><i class="fa fa-check"></i><b>14.1.2</b> kable kaunistaa<span></span></a></li>
-<li class="chapter" data-level="14.1.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#tail-komento"><i class="fa fa-check"></i><b>14.1.3</b> tail-komento<span></span></a></li>
+<li class="chapter" data-level="14.1.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#head-komento"><i class="fa fa-check"></i><b>14.1.1</b> head-komento</a></li>
+<li class="chapter" data-level="14.1.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#kable-kaunistaa"><i class="fa fa-check"></i><b>14.1.2</b> kable kaunistaa</a></li>
+<li class="chapter" data-level="14.1.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#tail-komento"><i class="fa fa-check"></i><b>14.1.3</b> tail-komento</a></li>
 </ul></li>
-<li class="chapter" data-level="14.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#muuttujien-tarkastelu"><i class="fa fa-check"></i><b>14.2</b> Muuttujien tarkastelu<span></span></a>
+<li class="chapter" data-level="14.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#muuttujien-tarkastelu"><i class="fa fa-check"></i><b>14.2</b> Muuttujien tarkastelu</a>
 <ul>
-<li class="chapter" data-level="14.2.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#min-max-mean"><i class="fa fa-check"></i><b>14.2.1</b> min, max, mean<span></span></a></li>
-<li class="chapter" data-level="14.2.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#summary"><i class="fa fa-check"></i><b>14.2.2</b> summary<span></span></a></li>
-<li class="chapter" data-level="14.2.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#summarytools"><i class="fa fa-check"></i><b>14.2.3</b> summarytools<span></span></a></li>
-<li class="chapter" data-level="14.2.4" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#questionrfreq"><i class="fa fa-check"></i><b>14.2.4</b> questionr::freq<span></span></a></li>
-<li class="chapter" data-level="14.2.5" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#table1"><i class="fa fa-check"></i><b>14.2.5</b> table1<span></span></a></li>
+<li class="chapter" data-level="14.2.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#min-max-mean"><i class="fa fa-check"></i><b>14.2.1</b> min, max, mean</a></li>
+<li class="chapter" data-level="14.2.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#summary"><i class="fa fa-check"></i><b>14.2.2</b> summary</a></li>
+<li class="chapter" data-level="14.2.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#summarytools"><i class="fa fa-check"></i><b>14.2.3</b> summarytools</a></li>
+<li class="chapter" data-level="14.2.4" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#questionrfreq"><i class="fa fa-check"></i><b>14.2.4</b> questionr::freq</a></li>
+<li class="chapter" data-level="14.2.5" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#table1"><i class="fa fa-check"></i><b>14.2.5</b> table1</a></li>
 </ul></li>
-<li class="chapter" data-level="14.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#kuvaajat"><i class="fa fa-check"></i><b>14.3</b> Kuvaajat<span></span></a>
+<li class="chapter" data-level="14.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#kuvaajat"><i class="fa fa-check"></i><b>14.3</b> Kuvaajat</a>
 <ul>
-<li class="chapter" data-level="14.3.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#plot"><i class="fa fa-check"></i><b>14.3.1</b> plot<span></span></a></li>
-<li class="chapter" data-level="14.3.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#ggplot2"><i class="fa fa-check"></i><b>14.3.2</b> ggplot2<span></span></a></li>
+<li class="chapter" data-level="14.3.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#plot"><i class="fa fa-check"></i><b>14.3.1</b> plot</a></li>
+<li class="chapter" data-level="14.3.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#ggplot2"><i class="fa fa-check"></i><b>14.3.2</b> ggplot2</a></li>
 </ul></li>
-<li class="chapter" data-level="14.4" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#lineaarinen-regressio"><i class="fa fa-check"></i><b>14.4</b> Lineaarinen regressio<span></span></a>
+<li class="chapter" data-level="14.4" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#lineaarinen-regressio"><i class="fa fa-check"></i><b>14.4</b> Lineaarinen regressio</a>
 <ul>
-<li class="chapter" data-level="14.4.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#yksinkertainen-regressio"><i class="fa fa-check"></i><b>14.4.1</b> Yksinkertainen regressio<span></span></a></li>
-<li class="chapter" data-level="14.4.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#tidy"><i class="fa fa-check"></i><b>14.4.2</b> tidy<span></span></a></li>
-<li class="chapter" data-level="14.4.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#multippeli-regressio"><i class="fa fa-check"></i><b>14.4.3</b> Multippeli regressio<span></span></a></li>
+<li class="chapter" data-level="14.4.1" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#yksinkertainen-regressio"><i class="fa fa-check"></i><b>14.4.1</b> Yksinkertainen regressio</a></li>
+<li class="chapter" data-level="14.4.2" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#tidy"><i class="fa fa-check"></i><b>14.4.2</b> tidy</a></li>
+<li class="chapter" data-level="14.4.3" data-path="analyysejä-r-markdownilla.html"><a href="analyysejä-r-markdownilla.html#multippeli-regressio"><i class="fa fa-check"></i><b>14.4.3</b> Multippeli regressio</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="lopuksi.html"><a href="lopuksi.html"><i class="fa fa-check"></i><b>15</b> Lopuksi<span></span></a></li>
-<li class="appendix"><span><b>Liitteet<span></span></b></span></li>
-<li class="chapter" data-level="A" data-path="versionhallinta.html"><a href="versionhallinta.html"><i class="fa fa-check"></i><b>A</b> Versionhallinta<span></span></a>
+<li class="chapter" data-level="15" data-path="lopuksi.html"><a href="lopuksi.html"><i class="fa fa-check"></i><b>15</b> Lopuksi</a></li>
+<li class="appendix"><span><b>Liitteet</b></span></li>
+<li class="chapter" data-level="A" data-path="versionhallinta.html"><a href="versionhallinta.html"><i class="fa fa-check"></i><b>A</b> Versionhallinta</a>
 <ul>
-<li class="chapter" data-level="A.1" data-path="versionhallinta.html"><a href="versionhallinta.html#versionhallinta---ei-vain-guruille"><i class="fa fa-check"></i><b>A.1</b> Versionhallinta - ei vain guruille<span></span></a></li>
-<li class="chapter" data-level="A.2" data-path="versionhallinta.html"><a href="versionhallinta.html#avoimista-lisensseistä"><i class="fa fa-check"></i><b>A.2</b> Avoimista lisensseistä<span></span></a></li>
-<li class="chapter" data-level="A.3" data-path="versionhallinta.html"><a href="versionhallinta.html#varaston-repository-luominen-yliopiston-palvelimelle"><i class="fa fa-check"></i><b>A.3</b> Varaston (<em>repository</em>) luominen yliopiston palvelimelle<span></span></a></li>
-<li class="chapter" data-level="A.4" data-path="versionhallinta.html"><a href="versionhallinta.html#SSH-avain-miten-luodaan"><i class="fa fa-check"></i><b>A.4</b> SSH-avaimen luominen<span></span></a></li>
-<li class="chapter" data-level="A.5" data-path="versionhallinta.html"><a href="versionhallinta.html#varaston-käyttö-rstudiossa"><i class="fa fa-check"></i><b>A.5</b> Varaston käyttö RStudiossa<span></span></a></li>
-<li class="chapter" data-level="A.6" data-path="versionhallinta.html"><a href="versionhallinta.html#yhteenveto"><i class="fa fa-check"></i><b>A.6</b> Yhteenveto<span></span></a></li>
+<li class="chapter" data-level="A.1" data-path="versionhallinta.html"><a href="versionhallinta.html#versionhallinta---ei-vain-guruille"><i class="fa fa-check"></i><b>A.1</b> Versionhallinta - ei vain guruille</a></li>
+<li class="chapter" data-level="A.2" data-path="versionhallinta.html"><a href="versionhallinta.html#avoimista-lisensseistä"><i class="fa fa-check"></i><b>A.2</b> Avoimista lisensseistä</a></li>
+<li class="chapter" data-level="A.3" data-path="versionhallinta.html"><a href="versionhallinta.html#varaston-repository-luominen-yliopiston-palvelimelle"><i class="fa fa-check"></i><b>A.3</b> Varaston (<em>repository</em>) luominen yliopiston palvelimelle</a></li>
+<li class="chapter" data-level="A.4" data-path="versionhallinta.html"><a href="versionhallinta.html#SSH-avain-miten-luodaan"><i class="fa fa-check"></i><b>A.4</b> SSH-avaimen luominen</a></li>
+<li class="chapter" data-level="A.5" data-path="versionhallinta.html"><a href="versionhallinta.html#varaston-käyttö-rstudiossa"><i class="fa fa-check"></i><b>A.5</b> Varaston käyttö RStudiossa</a></li>
+<li class="chapter" data-level="A.6" data-path="versionhallinta.html"><a href="versionhallinta.html#yhteenveto"><i class="fa fa-check"></i><b>A.6</b> Yhteenveto</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html"><i class="fa fa-check"></i><b>B</b> RStudio ja SSH<span></span></a>
+<li class="chapter" data-level="B" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html"><i class="fa fa-check"></i><b>B</b> RStudio ja SSH</a>
 <ul>
-<li class="chapter" data-level="B.1" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#rstudion-terminaali"><i class="fa fa-check"></i><b>B.1</b> Rstudion terminaali<span></span></a></li>
-<li class="chapter" data-level="B.2" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#ssh-avaimet"><i class="fa fa-check"></i><b>B.2</b> SSH-avaimet<span></span></a></li>
-<li class="chapter" data-level="B.3" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#tmux"><i class="fa fa-check"></i><b>B.3</b> Tmux<span></span></a></li>
-<li class="chapter" data-level="B.4" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#etäyhteyden-avaaminen-rstudiossa"><i class="fa fa-check"></i><b>B.4</b> Etäyhteyden avaaminen Rstudiossa<span></span></a></li>
-<li class="chapter" data-level="B.5" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#komentojen-suorittaminen-etäyhteyden-yli"><i class="fa fa-check"></i><b>B.5</b> Komentojen suorittaminen etäyhteyden yli<span></span></a></li>
-<li class="chapter" data-level="B.6" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#harjoitus-survival-analyysi"><i class="fa fa-check"></i><b>B.6</b> Harjoitus: survival-analyysi<span></span></a></li>
-<li class="chapter" data-level="B.7" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#yhteenveto-1"><i class="fa fa-check"></i><b>B.7</b> Yhteenveto<span></span></a></li>
+<li class="chapter" data-level="B.1" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#rstudion-terminaali"><i class="fa fa-check"></i><b>B.1</b> Rstudion terminaali</a></li>
+<li class="chapter" data-level="B.2" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#ssh-avaimet"><i class="fa fa-check"></i><b>B.2</b> SSH-avaimet</a></li>
+<li class="chapter" data-level="B.3" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#tmux"><i class="fa fa-check"></i><b>B.3</b> Tmux</a></li>
+<li class="chapter" data-level="B.4" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#etäyhteyden-avaaminen-rstudiossa"><i class="fa fa-check"></i><b>B.4</b> Etäyhteyden avaaminen Rstudiossa</a></li>
+<li class="chapter" data-level="B.5" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#komentojen-suorittaminen-etäyhteyden-yli"><i class="fa fa-check"></i><b>B.5</b> Komentojen suorittaminen etäyhteyden yli</a></li>
+<li class="chapter" data-level="B.6" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#harjoitus-survival-analyysi"><i class="fa fa-check"></i><b>B.6</b> Harjoitus: survival-analyysi</a></li>
+<li class="chapter" data-level="B.7" data-path="rstudio-ja-ssh.html"><a href="rstudio-ja-ssh.html#yhteenveto-1"><i class="fa fa-check"></i><b>B.7</b> Yhteenveto</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
@@ -255,13 +257,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">14.1.1</span> head-komento<a href="analyysejä-r-markdownilla.html#head-komento" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Hyödynnämme erittäin hyödyllistä komentoa <em>head</em>, joka tulostaa ensimmäiset 6 riviä datastamme. Saamme luotua pikasilmäyksen dataamme ja halutessamme jaettua sen R Markdownin muodossa eteenpäin.</p>
 <p>Voit esim. kirjoittaa “Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa”. Sen jälkeen voit lyödä enterillä pari tyhjää riviä ja kirjoittaa seuraavan chunkin, jossa pitää siis olla gravisaksentteja 3 kpl alussa ja lopussa:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb25-1"><a href="analyysejä-r-markdownilla.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r head_datastamme, echo=FALSE}</span></span>
-<span id="cb25-2"><a href="analyysejä-r-markdownilla.html#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="analyysejä-r-markdownilla.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="in">head(autoja2)</span></span>
-<span id="cb25-4"><a href="analyysejä-r-markdownilla.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb25-1"><a href="analyysejä-r-markdownilla.html#cb25-1" tabindex="-1"></a><span class="in">```{r head_datastamme, echo=FALSE}</span></span>
+<span id="cb25-2"><a href="analyysejä-r-markdownilla.html#cb25-2" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="analyysejä-r-markdownilla.html#cb25-3" tabindex="-1"></a><span class="in">head(autoja2)</span></span>
+<span id="cb25-4"><a href="analyysejä-r-markdownilla.html#cb25-4" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br>
 Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
-<pre><code>## # A tibble: 6 x 5
+<pre><code>## # A tibble: 6 × 5
 ##   Automerkit        bensankulutus_eu hevosvoima_eu massa_eu vaihteisto
 ##   &lt;chr&gt;                        &lt;dbl&gt;         &lt;dbl&gt;    &lt;dbl&gt; &lt;fct&gt;     
 ## 1 Mazda RX4                    11.2          112.     1188. 1         
@@ -279,22 +281,29 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 <pre><code>install.packages(&quot;knitr&quot;)</code></pre>
 <p><br></p>
 <p>Tämän lisäksi sinun kannattaa kutsua <em>knitr</em> käyttöön lisäämällä se ensimmäiseen, <em>r setup</em> -nimiseen chunkiin. Tämän jälkeen ensimmäinen chunkisi näyttää seuraavalta:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb28-1"><a href="analyysejä-r-markdownilla.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
-<span id="cb28-2"><a href="analyysejä-r-markdownilla.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(echo = TRUE)</span></span>
-<span id="cb28-3"><a href="analyysejä-r-markdownilla.html#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(dplyr)</span></span>
-<span id="cb28-4"><a href="analyysejä-r-markdownilla.html#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
-<span id="cb28-5"><a href="analyysejä-r-markdownilla.html#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="in">source(&quot;minun_datani.R&quot;)</span></span>
-<span id="cb28-6"><a href="analyysejä-r-markdownilla.html#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb28-1"><a href="analyysejä-r-markdownilla.html#cb28-1" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
+<span id="cb28-2"><a href="analyysejä-r-markdownilla.html#cb28-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(echo = TRUE)</span></span>
+<span id="cb28-3"><a href="analyysejä-r-markdownilla.html#cb28-3" tabindex="-1"></a><span class="in">library(dplyr)</span></span>
+<span id="cb28-4"><a href="analyysejä-r-markdownilla.html#cb28-4" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb28-5"><a href="analyysejä-r-markdownilla.html#cb28-5" tabindex="-1"></a><span class="in">source(&quot;minun_datani.R&quot;)</span></span>
+<span id="cb28-6"><a href="analyysejä-r-markdownilla.html#cb28-6" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br></p>
 <p>Tämän jälkeen pääset käyttämään <em>kable</em>-komentoa.</p>
 <p>Putkitetaan kaikki komennot seuraavasti:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb29-1"><a href="analyysejä-r-markdownilla.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r head_datastamme_kable, echo=FALSE}</span></span>
-<span id="cb29-2"><a href="analyysejä-r-markdownilla.html#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-3"><a href="analyysejä-r-markdownilla.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% head %&gt;% kable</span></span>
-<span id="cb29-4"><a href="analyysejä-r-markdownilla.html#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb29-1"><a href="analyysejä-r-markdownilla.html#cb29-1" tabindex="-1"></a><span class="in">```{r head_datastamme_kable, echo=FALSE}</span></span>
+<span id="cb29-2"><a href="analyysejä-r-markdownilla.html#cb29-2" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="analyysejä-r-markdownilla.html#cb29-3" tabindex="-1"></a><span class="in">autoja2 %&gt;% head %&gt;% kable</span></span>
+<span id="cb29-4"><a href="analyysejä-r-markdownilla.html#cb29-4" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br></p>
 <p>Näet nyt kauniimman tulosteen:</p>
 <table>
+<colgroup>
+<col width="26%" />
+<col width="24%" />
+<col width="20%" />
+<col width="13%" />
+<col width="15%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Automerkit</th>
@@ -353,11 +362,18 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 <div id="tail-komento" class="section level3 hasAnchor" number="14.1.3">
 <h3><span class="header-section-number">14.1.3</span> tail-komento<a href="analyysejä-r-markdownilla.html#tail-komento" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Komento <em>tail</em> tekee saman kuin <em>head</em> mutta toisesta suunnasta eli näyttää datasetin 6 viimeistä riviä.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb30-1"><a href="analyysejä-r-markdownilla.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r tail_datastamme_kable, echo=FALSE}</span></span>
-<span id="cb30-2"><a href="analyysejä-r-markdownilla.html#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-3"><a href="analyysejä-r-markdownilla.html#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% tail %&gt;% kable</span></span>
-<span id="cb30-4"><a href="analyysejä-r-markdownilla.html#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb30-1"><a href="analyysejä-r-markdownilla.html#cb30-1" tabindex="-1"></a><span class="in">```{r tail_datastamme_kable, echo=FALSE}</span></span>
+<span id="cb30-2"><a href="analyysejä-r-markdownilla.html#cb30-2" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="analyysejä-r-markdownilla.html#cb30-3" tabindex="-1"></a><span class="in">autoja2 %&gt;% tail %&gt;% kable</span></span>
+<span id="cb30-4"><a href="analyysejä-r-markdownilla.html#cb30-4" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <table>
+<colgroup>
+<col width="22%" />
+<col width="25%" />
+<col width="20%" />
+<col width="14%" />
+<col width="16%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Automerkit</th>
@@ -419,23 +435,23 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 <div id="min-max-mean" class="section level3 hasAnchor" number="14.2.1">
 <h3><span class="header-section-number">14.2.1</span> min, max, mean<a href="analyysejä-r-markdownilla.html#min-max-mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><em>dplyr</em>:in käskyllä <code>summarise</code> voimme helposti katsoa esim. minimi- ja maksimiarvot sekä keskiarvot haluamistamme muuttujista:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb31-1"><a href="analyysejä-r-markdownilla.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r keskiarvoja, echo=FALSE}</span></span>
-<span id="cb31-2"><a href="analyysejä-r-markdownilla.html#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-3"><a href="analyysejä-r-markdownilla.html#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-4"><a href="analyysejä-r-markdownilla.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="in"># Valitaan datasettimme &quot;autoja2&quot; käsittelyyn:</span></span>
-<span id="cb31-5"><a href="analyysejä-r-markdownilla.html#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-6"><a href="analyysejä-r-markdownilla.html#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
-<span id="cb31-7"><a href="analyysejä-r-markdownilla.html#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-8"><a href="analyysejä-r-markdownilla.html#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="in"># Käytetään summarise-käskyä:</span></span>
-<span id="cb31-9"><a href="analyysejä-r-markdownilla.html#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-10"><a href="analyysejä-r-markdownilla.html#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="in">      summarise(bensankulutuksen_minimi      = min(bensankulutus_eu),</span></span>
-<span id="cb31-11"><a href="analyysejä-r-markdownilla.html#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="in">                bensankulutuksen_maksimi     = max(bensankulutus_eu),</span></span>
-<span id="cb31-12"><a href="analyysejä-r-markdownilla.html#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="in">                bensankulutuksen_keskiarvo   = mean(bensankulutus_eu))  %&gt;% </span></span>
-<span id="cb31-13"><a href="analyysejä-r-markdownilla.html#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="in">           </span></span>
-<span id="cb31-14"><a href="analyysejä-r-markdownilla.html#cb31-14" aria-hidden="true" tabindex="-1"></a><span class="in"># Kaunistetaan jälki kablella:           </span></span>
-<span id="cb31-15"><a href="analyysejä-r-markdownilla.html#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="in">           </span></span>
-<span id="cb31-16"><a href="analyysejä-r-markdownilla.html#cb31-16" aria-hidden="true" tabindex="-1"></a><span class="in">      kable</span></span>
-<span id="cb31-17"><a href="analyysejä-r-markdownilla.html#cb31-17" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb31-1"><a href="analyysejä-r-markdownilla.html#cb31-1" tabindex="-1"></a><span class="in">```{r keskiarvoja, echo=FALSE}</span></span>
+<span id="cb31-2"><a href="analyysejä-r-markdownilla.html#cb31-2" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="analyysejä-r-markdownilla.html#cb31-3" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="analyysejä-r-markdownilla.html#cb31-4" tabindex="-1"></a><span class="in"># Valitaan datasettimme &quot;autoja2&quot; käsittelyyn:</span></span>
+<span id="cb31-5"><a href="analyysejä-r-markdownilla.html#cb31-5" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="analyysejä-r-markdownilla.html#cb31-6" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
+<span id="cb31-7"><a href="analyysejä-r-markdownilla.html#cb31-7" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="analyysejä-r-markdownilla.html#cb31-8" tabindex="-1"></a><span class="in"># Käytetään summarise-käskyä:</span></span>
+<span id="cb31-9"><a href="analyysejä-r-markdownilla.html#cb31-9" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="analyysejä-r-markdownilla.html#cb31-10" tabindex="-1"></a><span class="in">      summarise(bensankulutuksen_minimi      = min(bensankulutus_eu),</span></span>
+<span id="cb31-11"><a href="analyysejä-r-markdownilla.html#cb31-11" tabindex="-1"></a><span class="in">                bensankulutuksen_maksimi     = max(bensankulutus_eu),</span></span>
+<span id="cb31-12"><a href="analyysejä-r-markdownilla.html#cb31-12" tabindex="-1"></a><span class="in">                bensankulutuksen_keskiarvo   = mean(bensankulutus_eu))  %&gt;% </span></span>
+<span id="cb31-13"><a href="analyysejä-r-markdownilla.html#cb31-13" tabindex="-1"></a><span class="in">           </span></span>
+<span id="cb31-14"><a href="analyysejä-r-markdownilla.html#cb31-14" tabindex="-1"></a><span class="in"># Kaunistetaan jälki kablella:           </span></span>
+<span id="cb31-15"><a href="analyysejä-r-markdownilla.html#cb31-15" tabindex="-1"></a><span class="in">           </span></span>
+<span id="cb31-16"><a href="analyysejä-r-markdownilla.html#cb31-16" tabindex="-1"></a><span class="in">      kable</span></span>
+<span id="cb31-17"><a href="analyysejä-r-markdownilla.html#cb31-17" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <table>
 <colgroup>
 <col width="31%" />
@@ -460,24 +476,24 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 <p><br></p>
 <p>Voit myös tulostaa tietyn tunnusluvun - vaikkapa keskiarvon - useammalle muuttujalle käyttämällä komentoa <code>summarise_at</code>. Kannattaa kirjoittaa ennen seuraavaa koodia vielä vapaata tekstiä, esim.</p>
 <p>Alla näkyy datasetin “autoja2” muuttujien keskiarvoja.</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb32-1"><a href="analyysejä-r-markdownilla.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r keskiarvoja2, echo=FALSE}</span></span>
-<span id="cb32-2"><a href="analyysejä-r-markdownilla.html#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-3"><a href="analyysejä-r-markdownilla.html#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-4"><a href="analyysejä-r-markdownilla.html#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="in"># Valitaan datasettimme &quot;autoja2&quot; käsittelyyn</span></span>
-<span id="cb32-5"><a href="analyysejä-r-markdownilla.html#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-6"><a href="analyysejä-r-markdownilla.html#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
-<span id="cb32-7"><a href="analyysejä-r-markdownilla.html#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-8"><a href="analyysejä-r-markdownilla.html#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="in"># Käytetään käskyä summarise at. Halutut muuttujat täytyy</span></span>
-<span id="cb32-9"><a href="analyysejä-r-markdownilla.html#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="in"># ilmaista rotlassa seuraavasti:</span></span>
-<span id="cb32-10"><a href="analyysejä-r-markdownilla.html#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="in"># c(&quot;muuttuja1&quot;, &quot;muuttuja2&quot;, &quot;muuttuja3&quot;)</span></span>
-<span id="cb32-11"><a href="analyysejä-r-markdownilla.html#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="in"># Näiden jälkeen tulee vielä haluttu tunnusluku, seuraavassa valittiin mean</span></span>
-<span id="cb32-12"><a href="analyysejä-r-markdownilla.html#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-13"><a href="analyysejä-r-markdownilla.html#cb32-13" aria-hidden="true" tabindex="-1"></a><span class="in">  summarise_at(c(&quot;bensankulutus_eu&quot;, &quot;hevosvoima_eu&quot;, &quot;massa_eu&quot;), mean) %&gt;% </span></span>
-<span id="cb32-14"><a href="analyysejä-r-markdownilla.html#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-15"><a href="analyysejä-r-markdownilla.html#cb32-15" aria-hidden="true" tabindex="-1"></a><span class="in"># Kaunistetaan jälki kablella</span></span>
-<span id="cb32-16"><a href="analyysejä-r-markdownilla.html#cb32-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-17"><a href="analyysejä-r-markdownilla.html#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="in">  kable</span></span>
-<span id="cb32-18"><a href="analyysejä-r-markdownilla.html#cb32-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb32-1"><a href="analyysejä-r-markdownilla.html#cb32-1" tabindex="-1"></a><span class="in">```{r keskiarvoja2, echo=FALSE}</span></span>
+<span id="cb32-2"><a href="analyysejä-r-markdownilla.html#cb32-2" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="analyysejä-r-markdownilla.html#cb32-3" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="analyysejä-r-markdownilla.html#cb32-4" tabindex="-1"></a><span class="in"># Valitaan datasettimme &quot;autoja2&quot; käsittelyyn</span></span>
+<span id="cb32-5"><a href="analyysejä-r-markdownilla.html#cb32-5" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="analyysejä-r-markdownilla.html#cb32-6" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
+<span id="cb32-7"><a href="analyysejä-r-markdownilla.html#cb32-7" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="analyysejä-r-markdownilla.html#cb32-8" tabindex="-1"></a><span class="in"># Käytetään käskyä summarise at. Halutut muuttujat täytyy</span></span>
+<span id="cb32-9"><a href="analyysejä-r-markdownilla.html#cb32-9" tabindex="-1"></a><span class="in"># ilmaista rotlassa seuraavasti:</span></span>
+<span id="cb32-10"><a href="analyysejä-r-markdownilla.html#cb32-10" tabindex="-1"></a><span class="in"># c(&quot;muuttuja1&quot;, &quot;muuttuja2&quot;, &quot;muuttuja3&quot;)</span></span>
+<span id="cb32-11"><a href="analyysejä-r-markdownilla.html#cb32-11" tabindex="-1"></a><span class="in"># Näiden jälkeen tulee vielä haluttu tunnusluku, seuraavassa valittiin mean</span></span>
+<span id="cb32-12"><a href="analyysejä-r-markdownilla.html#cb32-12" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="analyysejä-r-markdownilla.html#cb32-13" tabindex="-1"></a><span class="in">  summarise_at(c(&quot;bensankulutus_eu&quot;, &quot;hevosvoima_eu&quot;, &quot;massa_eu&quot;), mean) %&gt;% </span></span>
+<span id="cb32-14"><a href="analyysejä-r-markdownilla.html#cb32-14" tabindex="-1"></a></span>
+<span id="cb32-15"><a href="analyysejä-r-markdownilla.html#cb32-15" tabindex="-1"></a><span class="in"># Kaunistetaan jälki kablella</span></span>
+<span id="cb32-16"><a href="analyysejä-r-markdownilla.html#cb32-16" tabindex="-1"></a></span>
+<span id="cb32-17"><a href="analyysejä-r-markdownilla.html#cb32-17" tabindex="-1"></a><span class="in">  kable</span></span>
+<span id="cb32-18"><a href="analyysejä-r-markdownilla.html#cb32-18" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br></p>
 <p>Alla näkyy datasetin “autoja2” muuttujien keskiarvoja.</p>
 <table>
@@ -502,11 +518,19 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 <div id="summary" class="section level3 hasAnchor" number="14.2.2">
 <h3><span class="header-section-number">14.2.2</span> summary<a href="analyysejä-r-markdownilla.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Funktiolla <em>summary()</em> saat yhteenvedon koko datasetistäsi.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb33-1"><a href="analyysejä-r-markdownilla.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r summary, echo=FALSE}</span></span>
-<span id="cb33-2"><a href="analyysejä-r-markdownilla.html#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-3"><a href="analyysejä-r-markdownilla.html#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% summary %&gt;% kable()</span></span>
-<span id="cb33-4"><a href="analyysejä-r-markdownilla.html#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb33-1"><a href="analyysejä-r-markdownilla.html#cb33-1" tabindex="-1"></a><span class="in">```{r summary, echo=FALSE}</span></span>
+<span id="cb33-2"><a href="analyysejä-r-markdownilla.html#cb33-2" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="analyysejä-r-markdownilla.html#cb33-3" tabindex="-1"></a><span class="in">autoja2 %&gt;% summary %&gt;% kable()</span></span>
+<span id="cb33-4"><a href="analyysejä-r-markdownilla.html#cb33-4" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <table>
+<colgroup>
+<col width="3%" />
+<col width="21%" />
+<col width="21%" />
+<col width="19%" />
+<col width="19%" />
+<col width="14%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -570,10 +594,10 @@ Tässä muutaman rivin ote valmiista datastamme tässä artikkelissa.</p>
 </table>
 <p><br></p>
 <p>Halutessasi voit ajaa komennon <em>summary</em> myös jokaiselle datasettisi muuttujalle erikseen, kun “looppaat” <em>summary</em>n <em>sapply</em>-nimisen komennon läpi. Tällöin et voi kuitenkaan käyttää <em>kable</em>a, joten jälki on rujompaa.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb34-1"><a href="analyysejä-r-markdownilla.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r sapply2, echo=FALSE}</span></span>
-<span id="cb34-2"><a href="analyysejä-r-markdownilla.html#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-3"><a href="analyysejä-r-markdownilla.html#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% sapply(summary)</span></span>
-<span id="cb34-4"><a href="analyysejä-r-markdownilla.html#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb34-1"><a href="analyysejä-r-markdownilla.html#cb34-1" tabindex="-1"></a><span class="in">```{r sapply2, echo=FALSE}</span></span>
+<span id="cb34-2"><a href="analyysejä-r-markdownilla.html#cb34-2" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="analyysejä-r-markdownilla.html#cb34-3" tabindex="-1"></a><span class="in">autoja2 %&gt;% sapply(summary)</span></span>
+<span id="cb34-4"><a href="analyysejä-r-markdownilla.html#cb34-4" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <pre><code>## $Automerkit
 ##    Length     Class      Mode 
 ##        25 character character 
@@ -603,31 +627,31 @@ Asentaminen tapahtuu siten, että kirjoitat konsoliin <code>install.packages("su
 <div id="dfsummary" class="section level4 hasAnchor" number="14.2.3.1">
 <h4><span class="header-section-number">14.2.3.1</span> dfSummary<a href="analyysejä-r-markdownilla.html#dfsummary" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><em>dfSummary</em> antaa hyvin monipuolisen esityksen koko datasetistäsi. Katso alla esimerkkiä datasetistämme “autoja2”. Aja seuraava koodi:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb36-1"><a href="analyysejä-r-markdownilla.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r summarytools2, echo=FALSE, results=&quot;asis&quot;}</span></span>
-<span id="cb36-2"><a href="analyysejä-r-markdownilla.html#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-3"><a href="analyysejä-r-markdownilla.html#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="in"># summarytools vaatii ylle määreen results=&quot;asis&quot; jotta jälki näyttää</span></span>
-<span id="cb36-4"><a href="analyysejä-r-markdownilla.html#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="in"># R Markdownissa kauniilta.</span></span>
-<span id="cb36-5"><a href="analyysejä-r-markdownilla.html#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-6"><a href="analyysejä-r-markdownilla.html#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
-<span id="cb36-7"><a href="analyysejä-r-markdownilla.html#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-8"><a href="analyysejä-r-markdownilla.html#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% dfSummary(varnumbers   = FALSE,</span></span>
-<span id="cb36-9"><a href="analyysejä-r-markdownilla.html#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="in">                      plain.ascii = FALSE,</span></span>
-<span id="cb36-10"><a href="analyysejä-r-markdownilla.html#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="in">                      style = &quot;grid&quot;,</span></span>
-<span id="cb36-11"><a href="analyysejä-r-markdownilla.html#cb36-11" aria-hidden="true" tabindex="-1"></a><span class="in">                      graph.magnif = 0.75,</span></span>
-<span id="cb36-12"><a href="analyysejä-r-markdownilla.html#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="in">                      max.distinct.values = 3,  # Laitoin tähän 3, jotta ei</span></span>
-<span id="cb36-13"><a href="analyysejä-r-markdownilla.html#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="in">                                                # lähde listaamaan automerkkejä</span></span>
-<span id="cb36-14"><a href="analyysejä-r-markdownilla.html#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="in">                                                # rivikaupalla.</span></span>
-<span id="cb36-15"><a href="analyysejä-r-markdownilla.html#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="in">                      valid.col    = FALSE,</span></span>
-<span id="cb36-16"><a href="analyysejä-r-markdownilla.html#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="in">                      tmp.img.dir  = &quot;/tmp&quot;)</span></span>
-<span id="cb36-17"><a href="analyysejä-r-markdownilla.html#cb36-17" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb36-1"><a href="analyysejä-r-markdownilla.html#cb36-1" tabindex="-1"></a><span class="in">```{r summarytools2, echo=FALSE, results=&quot;asis&quot;}</span></span>
+<span id="cb36-2"><a href="analyysejä-r-markdownilla.html#cb36-2" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="analyysejä-r-markdownilla.html#cb36-3" tabindex="-1"></a><span class="in"># summarytools vaatii ylle määreen results=&quot;asis&quot; jotta jälki näyttää</span></span>
+<span id="cb36-4"><a href="analyysejä-r-markdownilla.html#cb36-4" tabindex="-1"></a><span class="in"># R Markdownissa kauniilta.</span></span>
+<span id="cb36-5"><a href="analyysejä-r-markdownilla.html#cb36-5" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="analyysejä-r-markdownilla.html#cb36-6" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
+<span id="cb36-7"><a href="analyysejä-r-markdownilla.html#cb36-7" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="analyysejä-r-markdownilla.html#cb36-8" tabindex="-1"></a><span class="in">autoja2 %&gt;% dfSummary(varnumbers   = FALSE,</span></span>
+<span id="cb36-9"><a href="analyysejä-r-markdownilla.html#cb36-9" tabindex="-1"></a><span class="in">                      plain.ascii = FALSE,</span></span>
+<span id="cb36-10"><a href="analyysejä-r-markdownilla.html#cb36-10" tabindex="-1"></a><span class="in">                      style = &quot;grid&quot;,</span></span>
+<span id="cb36-11"><a href="analyysejä-r-markdownilla.html#cb36-11" tabindex="-1"></a><span class="in">                      graph.magnif = 0.75,</span></span>
+<span id="cb36-12"><a href="analyysejä-r-markdownilla.html#cb36-12" tabindex="-1"></a><span class="in">                      max.distinct.values = 3,  # Laitoin tähän 3, jotta ei</span></span>
+<span id="cb36-13"><a href="analyysejä-r-markdownilla.html#cb36-13" tabindex="-1"></a><span class="in">                                                # lähde listaamaan automerkkejä</span></span>
+<span id="cb36-14"><a href="analyysejä-r-markdownilla.html#cb36-14" tabindex="-1"></a><span class="in">                                                # rivikaupalla.</span></span>
+<span id="cb36-15"><a href="analyysejä-r-markdownilla.html#cb36-15" tabindex="-1"></a><span class="in">                      valid.col    = FALSE,</span></span>
+<span id="cb36-16"><a href="analyysejä-r-markdownilla.html#cb36-16" tabindex="-1"></a><span class="in">                      tmp.img.dir  = &quot;/tmp&quot;)</span></span>
+<span id="cb36-17"><a href="analyysejä-r-markdownilla.html#cb36-17" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br>
 Näet tämän jälkeen seuraavan yhteenvedon:</p>
-<table>
+<table style="width:97%;">
 <colgroup>
-<col width="19%" />
+<col width="18%" />
 <col width="28%" />
-<col width="20%" />
-<col width="22%" />
+<col width="19%" />
+<col width="21%" />
 <col width="9%" />
 </colgroup>
 <thead>
@@ -651,7 +675,7 @@ Näet tämän jälkeen seuraavan yhteenvedon:</p>
 1 ( 4.0%)<br />
 1 ( 4.0%)<br />
 22 (88.0%)</td>
-<td><img src="/private/tmp/ds0021.png" /></td>
+<td><img src="/private/tmp/ds0011.png" /></td>
 <td>0<br />
 (0.0%)</td>
 </tr>
@@ -663,7 +687,7 @@ min &lt; med &lt; max:<br />
 7.7 &lt; 13.2 &lt; 22.6<br />
 IQR (CV) : 4.3 (0.3)</td>
 <td>20 distinct values</td>
-<td><img src="/private/tmp/ds0022.png" /></td>
+<td><img src="/private/tmp/ds0012.png" /></td>
 <td>0<br />
 (0.0%)</td>
 </tr>
@@ -675,7 +699,7 @@ min &lt; med &lt; max:<br />
 52.7 &lt; 177.4 &lt; 339.7<br />
 IQR (CV) : 96.3 (0.4)</td>
 <td>17 distinct values</td>
-<td><img src="/private/tmp/ds0023.png" /></td>
+<td><img src="/private/tmp/ds0013.png" /></td>
 <td>0<br />
 (0.0%)</td>
 </tr>
@@ -687,7 +711,7 @@ min &lt; med &lt; max:<br />
 686.3 &lt; 1560.4 &lt; 2460.3<br />
 IQR (CV) : 410.5 (0.3)</td>
 <td>22 distinct values</td>
-<td><img src="/private/tmp/ds0024.png" /></td>
+<td><img src="/private/tmp/ds0014.png" /></td>
 <td>0<br />
 (0.0%)</td>
 </tr>
@@ -698,7 +722,7 @@ IQR (CV) : 410.5 (0.3)</td>
 2. 1</td>
 <td>16 (64.0%)<br />
 9 (36.0%)</td>
-<td><img src="/private/tmp/ds0025.png" /></td>
+<td><img src="/private/tmp/ds0015.png" /></td>
 <td>0<br />
 (0.0%)</td>
 </tr>
@@ -710,15 +734,15 @@ IQR (CV) : 410.5 (0.3)</td>
 <h4><span class="header-section-number">14.2.3.2</span> descr<a href="analyysejä-r-markdownilla.html#descr" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><em>summarytools</em>-paketin funktio <em>descr</em> ottaa datasetistä vain jatkuvat (numeeriset) muuttujat käsittelyyn, ja näyttää niistä erilaisia tunnuslukuja käyttäjän toiveita noudattaen. Tarkastele seuraavia esimerkkejä.</p>
 <p>Ensimmäinen esimerkki:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb37-1"><a href="analyysejä-r-markdownilla.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r descr, echo=FALSE, results=&quot;asis&quot;}</span></span>
-<span id="cb37-2"><a href="analyysejä-r-markdownilla.html#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-3"><a href="analyysejä-r-markdownilla.html#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
-<span id="cb37-4"><a href="analyysejä-r-markdownilla.html#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-5"><a href="analyysejä-r-markdownilla.html#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="in">descr(autoja2,</span></span>
-<span id="cb37-6"><a href="analyysejä-r-markdownilla.html#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="in">      stats     = &quot;common&quot;,</span></span>
-<span id="cb37-7"><a href="analyysejä-r-markdownilla.html#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="in">      transpose = TRUE,</span></span>
-<span id="cb37-8"><a href="analyysejä-r-markdownilla.html#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="in">      headings  = FALSE)</span></span>
-<span id="cb37-9"><a href="analyysejä-r-markdownilla.html#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb37-1"><a href="analyysejä-r-markdownilla.html#cb37-1" tabindex="-1"></a><span class="in">```{r descr, echo=FALSE, results=&quot;asis&quot;}</span></span>
+<span id="cb37-2"><a href="analyysejä-r-markdownilla.html#cb37-2" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="analyysejä-r-markdownilla.html#cb37-3" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
+<span id="cb37-4"><a href="analyysejä-r-markdownilla.html#cb37-4" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="analyysejä-r-markdownilla.html#cb37-5" tabindex="-1"></a><span class="in">descr(autoja2,</span></span>
+<span id="cb37-6"><a href="analyysejä-r-markdownilla.html#cb37-6" tabindex="-1"></a><span class="in">      stats     = &quot;common&quot;,</span></span>
+<span id="cb37-7"><a href="analyysejä-r-markdownilla.html#cb37-7" tabindex="-1"></a><span class="in">      transpose = TRUE,</span></span>
+<span id="cb37-8"><a href="analyysejä-r-markdownilla.html#cb37-8" tabindex="-1"></a><span class="in">      headings  = FALSE)</span></span>
+<span id="cb37-9"><a href="analyysejä-r-markdownilla.html#cb37-9" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br>
 Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta mitä ne <em>descr</em>-komennon mielestä ovat.</p>
 <p>Huomaa, että R heittää taulukon yläpuolelle herjan, että vain numeeriset muuttujat pääsivät analyysiin, mikä oli tiedossa:</p>
@@ -772,14 +796,14 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <p><br>
 <br></p>
 <p>Toisessa esimerkissä määrittelemme itse haluamamme tunnusluvut:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb39-1"><a href="analyysejä-r-markdownilla.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r descr2, echo=FALSE, results=&quot;asis&quot;}</span></span>
-<span id="cb39-2"><a href="analyysejä-r-markdownilla.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-3"><a href="analyysejä-r-markdownilla.html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
-<span id="cb39-4"><a href="analyysejä-r-markdownilla.html#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="in">descr(autoja2,</span></span>
-<span id="cb39-5"><a href="analyysejä-r-markdownilla.html#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="in">      stats     = c(&quot;mean&quot;,&quot;sd&quot;,&quot;min&quot;,&quot;max&quot;),</span></span>
-<span id="cb39-6"><a href="analyysejä-r-markdownilla.html#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="in">      transpose = TRUE,</span></span>
-<span id="cb39-7"><a href="analyysejä-r-markdownilla.html#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="in">      headings  = FALSE)</span></span>
-<span id="cb39-8"><a href="analyysejä-r-markdownilla.html#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb39-1"><a href="analyysejä-r-markdownilla.html#cb39-1" tabindex="-1"></a><span class="in">```{r descr2, echo=FALSE, results=&quot;asis&quot;}</span></span>
+<span id="cb39-2"><a href="analyysejä-r-markdownilla.html#cb39-2" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="analyysejä-r-markdownilla.html#cb39-3" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
+<span id="cb39-4"><a href="analyysejä-r-markdownilla.html#cb39-4" tabindex="-1"></a><span class="in">descr(autoja2,</span></span>
+<span id="cb39-5"><a href="analyysejä-r-markdownilla.html#cb39-5" tabindex="-1"></a><span class="in">      stats     = c(&quot;mean&quot;,&quot;sd&quot;,&quot;min&quot;,&quot;max&quot;),</span></span>
+<span id="cb39-6"><a href="analyysejä-r-markdownilla.html#cb39-6" tabindex="-1"></a><span class="in">      transpose = TRUE,</span></span>
+<span id="cb39-7"><a href="analyysejä-r-markdownilla.html#cb39-7" tabindex="-1"></a><span class="in">      headings  = FALSE)</span></span>
+<span id="cb39-8"><a href="analyysejä-r-markdownilla.html#cb39-8" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <pre><code>## Non-numerical variable(s) ignored: Automerkit, vaihteisto</code></pre>
 <table>
 <thead>
@@ -824,22 +848,22 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <h4><span class="header-section-number">14.2.3.3</span> freq<a href="analyysejä-r-markdownilla.html#freq" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><em>summarytools</em>-paketin funktiolla <em>freq</em> tutkitaan kategoristen muuttujien ominaisuuksia: n-lukuja, prosentuaalisia osuuksia ja kategorioiden kumulatiivista frekvenssiä.</p>
 <p>Olen säätänyt alla olevaan esimerkkikoodiin asetukset siten, että tämä funktio olisi mahdollisimman paljon SASin loistavan PROC FREQin kaltainen.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb41-1"><a href="analyysejä-r-markdownilla.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r freq, echo=FALSE, results=&quot;asis&quot;}</span></span>
-<span id="cb41-2"><a href="analyysejä-r-markdownilla.html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-3"><a href="analyysejä-r-markdownilla.html#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
-<span id="cb41-4"><a href="analyysejä-r-markdownilla.html#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-5"><a href="analyysejä-r-markdownilla.html#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="in">st_options(freq.cumul = TRUE,</span></span>
-<span id="cb41-6"><a href="analyysejä-r-markdownilla.html#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="in">     freq.totals    = TRUE,</span></span>
-<span id="cb41-7"><a href="analyysejä-r-markdownilla.html#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="in">     freq.report.nas    = FALSE,</span></span>
-<span id="cb41-8"><a href="analyysejä-r-markdownilla.html#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="in">     plain.ascii = FALSE,</span></span>
-<span id="cb41-9"><a href="analyysejä-r-markdownilla.html#cb41-9" aria-hidden="true" tabindex="-1"></a><span class="in">     headings = FALSE)</span></span>
-<span id="cb41-10"><a href="analyysejä-r-markdownilla.html#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-11"><a href="analyysejä-r-markdownilla.html#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="in">freq(autoja2$vaihteisto,</span></span>
-<span id="cb41-12"><a href="analyysejä-r-markdownilla.html#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="in">     style = &#39;rmarkdown&#39;,</span></span>
-<span id="cb41-13"><a href="analyysejä-r-markdownilla.html#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="in">     caption = &#39;Frequencies: autoja2$vaihteisto&#39;)</span></span>
-<span id="cb41-14"><a href="analyysejä-r-markdownilla.html#cb41-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-15"><a href="analyysejä-r-markdownilla.html#cb41-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-16"><a href="analyysejä-r-markdownilla.html#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb41-1"><a href="analyysejä-r-markdownilla.html#cb41-1" tabindex="-1"></a><span class="in">```{r freq, echo=FALSE, results=&quot;asis&quot;}</span></span>
+<span id="cb41-2"><a href="analyysejä-r-markdownilla.html#cb41-2" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="analyysejä-r-markdownilla.html#cb41-3" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
+<span id="cb41-4"><a href="analyysejä-r-markdownilla.html#cb41-4" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="analyysejä-r-markdownilla.html#cb41-5" tabindex="-1"></a><span class="in">st_options(freq.cumul = TRUE,</span></span>
+<span id="cb41-6"><a href="analyysejä-r-markdownilla.html#cb41-6" tabindex="-1"></a><span class="in">     freq.totals    = TRUE,</span></span>
+<span id="cb41-7"><a href="analyysejä-r-markdownilla.html#cb41-7" tabindex="-1"></a><span class="in">     freq.report.nas    = FALSE,</span></span>
+<span id="cb41-8"><a href="analyysejä-r-markdownilla.html#cb41-8" tabindex="-1"></a><span class="in">     plain.ascii = FALSE,</span></span>
+<span id="cb41-9"><a href="analyysejä-r-markdownilla.html#cb41-9" tabindex="-1"></a><span class="in">     headings = FALSE)</span></span>
+<span id="cb41-10"><a href="analyysejä-r-markdownilla.html#cb41-10" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="analyysejä-r-markdownilla.html#cb41-11" tabindex="-1"></a><span class="in">freq(autoja2$vaihteisto,</span></span>
+<span id="cb41-12"><a href="analyysejä-r-markdownilla.html#cb41-12" tabindex="-1"></a><span class="in">     style = &#39;rmarkdown&#39;,</span></span>
+<span id="cb41-13"><a href="analyysejä-r-markdownilla.html#cb41-13" tabindex="-1"></a><span class="in">     caption = &#39;Frequencies: autoja2$vaihteisto&#39;)</span></span>
+<span id="cb41-14"><a href="analyysejä-r-markdownilla.html#cb41-14" tabindex="-1"></a></span>
+<span id="cb41-15"><a href="analyysejä-r-markdownilla.html#cb41-15" tabindex="-1"></a></span>
+<span id="cb41-16"><a href="analyysejä-r-markdownilla.html#cb41-16" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br></p>
 <p>Tarkastelemme yllä näkyvän koodin kanssa datasetin “autoja2” kategorisen muuttujan “vaihteisto” kategorioiden (0 ja 1) tunnuslukuja. Otin yksistään tämän kirjan lukujen numerointiin liittyvistä “painoteknisistä” syistä otsikot pois; samasta syystä lisäsin käsin otsikon (caption-tekstin). Taulukko näkyy tässä alla:</p>
 <p><br></p>
@@ -880,25 +904,25 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <h4><span class="header-section-number">14.2.3.4</span> ctable<a href="analyysejä-r-markdownilla.html#ctable" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><em>summarytools</em>-paketin funktio <em>ctable</em> pystyy tekemään ristiintaulukointeja hieman samaan tapaan kuin SASin PROC FREQ.</p>
 <p>Tätä harjoitusta varten teemme uuden kategorisen muuttujan “bensasyoppo”:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb42-1"><a href="analyysejä-r-markdownilla.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ctable, echo=FALSE, results=&#39;asis&#39;}</span></span>
-<span id="cb42-2"><a href="analyysejä-r-markdownilla.html#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-3"><a href="analyysejä-r-markdownilla.html#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
-<span id="cb42-4"><a href="analyysejä-r-markdownilla.html#cb42-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-5"><a href="analyysejä-r-markdownilla.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="in"># Tehdään tätä demoa varten uusi muuttuja &quot;bensasyoppo&quot;</span></span>
-<span id="cb42-6"><a href="analyysejä-r-markdownilla.html#cb42-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-7"><a href="analyysejä-r-markdownilla.html#cb42-7" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;% mutate(bensasyoppo = ifelse(bensankulutus_eu &lt; 13.2, 0, 1)) -&gt; autoja3</span></span>
-<span id="cb42-8"><a href="analyysejä-r-markdownilla.html#cb42-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-9"><a href="analyysejä-r-markdownilla.html#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="in">autoja3$bensasyoppo &lt;- as.factor(autoja3$bensasyoppo)</span></span>
-<span id="cb42-10"><a href="analyysejä-r-markdownilla.html#cb42-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-11"><a href="analyysejä-r-markdownilla.html#cb42-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-12"><a href="analyysejä-r-markdownilla.html#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="in">ctable(x = autoja3$vaihteisto, </span></span>
-<span id="cb42-13"><a href="analyysejä-r-markdownilla.html#cb42-13" aria-hidden="true" tabindex="-1"></a><span class="in">       y = autoja3$bensasyoppo, </span></span>
-<span id="cb42-14"><a href="analyysejä-r-markdownilla.html#cb42-14" aria-hidden="true" tabindex="-1"></a><span class="in">       prop     = &#39;r&#39;,</span></span>
-<span id="cb42-15"><a href="analyysejä-r-markdownilla.html#cb42-15" aria-hidden="true" tabindex="-1"></a><span class="in">       totals   = T, </span></span>
-<span id="cb42-16"><a href="analyysejä-r-markdownilla.html#cb42-16" aria-hidden="true" tabindex="-1"></a><span class="in">       headings = FALSE)</span></span>
-<span id="cb42-17"><a href="analyysejä-r-markdownilla.html#cb42-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-18"><a href="analyysejä-r-markdownilla.html#cb42-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-19"><a href="analyysejä-r-markdownilla.html#cb42-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb42-1"><a href="analyysejä-r-markdownilla.html#cb42-1" tabindex="-1"></a><span class="in">```{r ctable, echo=FALSE, results=&#39;asis&#39;}</span></span>
+<span id="cb42-2"><a href="analyysejä-r-markdownilla.html#cb42-2" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="analyysejä-r-markdownilla.html#cb42-3" tabindex="-1"></a><span class="in">library(summarytools)</span></span>
+<span id="cb42-4"><a href="analyysejä-r-markdownilla.html#cb42-4" tabindex="-1"></a></span>
+<span id="cb42-5"><a href="analyysejä-r-markdownilla.html#cb42-5" tabindex="-1"></a><span class="in"># Tehdään tätä demoa varten uusi muuttuja &quot;bensasyoppo&quot;</span></span>
+<span id="cb42-6"><a href="analyysejä-r-markdownilla.html#cb42-6" tabindex="-1"></a></span>
+<span id="cb42-7"><a href="analyysejä-r-markdownilla.html#cb42-7" tabindex="-1"></a><span class="in">autoja2 %&gt;% mutate(bensasyoppo = ifelse(bensankulutus_eu &lt; 13.2, 0, 1)) -&gt; autoja3</span></span>
+<span id="cb42-8"><a href="analyysejä-r-markdownilla.html#cb42-8" tabindex="-1"></a></span>
+<span id="cb42-9"><a href="analyysejä-r-markdownilla.html#cb42-9" tabindex="-1"></a><span class="in">autoja3$bensasyoppo &lt;- as.factor(autoja3$bensasyoppo)</span></span>
+<span id="cb42-10"><a href="analyysejä-r-markdownilla.html#cb42-10" tabindex="-1"></a></span>
+<span id="cb42-11"><a href="analyysejä-r-markdownilla.html#cb42-11" tabindex="-1"></a></span>
+<span id="cb42-12"><a href="analyysejä-r-markdownilla.html#cb42-12" tabindex="-1"></a><span class="in">ctable(x = autoja3$vaihteisto, </span></span>
+<span id="cb42-13"><a href="analyysejä-r-markdownilla.html#cb42-13" tabindex="-1"></a><span class="in">       y = autoja3$bensasyoppo, </span></span>
+<span id="cb42-14"><a href="analyysejä-r-markdownilla.html#cb42-14" tabindex="-1"></a><span class="in">       prop     = &#39;r&#39;,</span></span>
+<span id="cb42-15"><a href="analyysejä-r-markdownilla.html#cb42-15" tabindex="-1"></a><span class="in">       totals   = T, </span></span>
+<span id="cb42-16"><a href="analyysejä-r-markdownilla.html#cb42-16" tabindex="-1"></a><span class="in">       headings = FALSE)</span></span>
+<span id="cb42-17"><a href="analyysejä-r-markdownilla.html#cb42-17" tabindex="-1"></a></span>
+<span id="cb42-18"><a href="analyysejä-r-markdownilla.html#cb42-18" tabindex="-1"></a></span>
+<span id="cb42-19"><a href="analyysejä-r-markdownilla.html#cb42-19" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <table>
 <tbody>
 <tr class="odd">
@@ -967,22 +991,22 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <pre><code>install.packages(&quot;table1&quot;)</code></pre>
 <p><br></p>
 <p>Tämän jälkeen voit kokeilla paketin toimintaa seuraavasti:</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb44-1"><a href="analyysejä-r-markdownilla.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r table1, echo=FALSE}</span></span>
-<span id="cb44-2"><a href="analyysejä-r-markdownilla.html#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-3"><a href="analyysejä-r-markdownilla.html#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(table1)</span></span>
-<span id="cb44-4"><a href="analyysejä-r-markdownilla.html#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-5"><a href="analyysejä-r-markdownilla.html#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="in">label(autoja2$bensankulutus_eu) &lt;- &quot;Polttoaineenkulutus&quot;</span></span>
-<span id="cb44-6"><a href="analyysejä-r-markdownilla.html#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="in">label(autoja2$hevosvoima_eu) &lt;- &quot;Hevosvoima&quot;</span></span>
-<span id="cb44-7"><a href="analyysejä-r-markdownilla.html#cb44-7" aria-hidden="true" tabindex="-1"></a><span class="in">label(autoja2$massa_eu) &lt;- &quot;Massa&quot;</span></span>
-<span id="cb44-8"><a href="analyysejä-r-markdownilla.html#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="in">label(autoja2$vaihteisto) &lt;- &quot;Vaihteisto&quot;</span></span>
-<span id="cb44-9"><a href="analyysejä-r-markdownilla.html#cb44-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-10"><a href="analyysejä-r-markdownilla.html#cb44-10" aria-hidden="true" tabindex="-1"></a><span class="in">units(autoja2$bensankulutus_eu) &lt;- &quot;l/100 km&quot;</span></span>
-<span id="cb44-11"><a href="analyysejä-r-markdownilla.html#cb44-11" aria-hidden="true" tabindex="-1"></a><span class="in">units(autoja2$massa_eu) &lt;- &quot;kg&quot;</span></span>
-<span id="cb44-12"><a href="analyysejä-r-markdownilla.html#cb44-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-13"><a href="analyysejä-r-markdownilla.html#cb44-13" aria-hidden="true" tabindex="-1"></a><span class="in">table1(~ bensankulutus_eu + hevosvoima_eu + massa_eu + factor(vaihteisto),</span></span>
-<span id="cb44-14"><a href="analyysejä-r-markdownilla.html#cb44-14" aria-hidden="true" tabindex="-1"></a><span class="in">       caption = &quot;Table 1. Characteristics&quot;,</span></span>
-<span id="cb44-15"><a href="analyysejä-r-markdownilla.html#cb44-15" aria-hidden="true" tabindex="-1"></a><span class="in">       data=autoja2)</span></span>
-<span id="cb44-16"><a href="analyysejä-r-markdownilla.html#cb44-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb44-1"><a href="analyysejä-r-markdownilla.html#cb44-1" tabindex="-1"></a><span class="in">```{r table1, echo=FALSE}</span></span>
+<span id="cb44-2"><a href="analyysejä-r-markdownilla.html#cb44-2" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="analyysejä-r-markdownilla.html#cb44-3" tabindex="-1"></a><span class="in">library(table1)</span></span>
+<span id="cb44-4"><a href="analyysejä-r-markdownilla.html#cb44-4" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="analyysejä-r-markdownilla.html#cb44-5" tabindex="-1"></a><span class="in">label(autoja2$bensankulutus_eu) &lt;- &quot;Polttoaineenkulutus&quot;</span></span>
+<span id="cb44-6"><a href="analyysejä-r-markdownilla.html#cb44-6" tabindex="-1"></a><span class="in">label(autoja2$hevosvoima_eu) &lt;- &quot;Hevosvoima&quot;</span></span>
+<span id="cb44-7"><a href="analyysejä-r-markdownilla.html#cb44-7" tabindex="-1"></a><span class="in">label(autoja2$massa_eu) &lt;- &quot;Massa&quot;</span></span>
+<span id="cb44-8"><a href="analyysejä-r-markdownilla.html#cb44-8" tabindex="-1"></a><span class="in">label(autoja2$vaihteisto) &lt;- &quot;Vaihteisto&quot;</span></span>
+<span id="cb44-9"><a href="analyysejä-r-markdownilla.html#cb44-9" tabindex="-1"></a></span>
+<span id="cb44-10"><a href="analyysejä-r-markdownilla.html#cb44-10" tabindex="-1"></a><span class="in">units(autoja2$bensankulutus_eu) &lt;- &quot;l/100 km&quot;</span></span>
+<span id="cb44-11"><a href="analyysejä-r-markdownilla.html#cb44-11" tabindex="-1"></a><span class="in">units(autoja2$massa_eu) &lt;- &quot;kg&quot;</span></span>
+<span id="cb44-12"><a href="analyysejä-r-markdownilla.html#cb44-12" tabindex="-1"></a></span>
+<span id="cb44-13"><a href="analyysejä-r-markdownilla.html#cb44-13" tabindex="-1"></a><span class="in">table1(~ bensankulutus_eu + hevosvoima_eu + massa_eu + factor(vaihteisto),</span></span>
+<span id="cb44-14"><a href="analyysejä-r-markdownilla.html#cb44-14" tabindex="-1"></a><span class="in">       caption = &quot;Table 1. Characteristics&quot;,</span></span>
+<span id="cb44-15"><a href="analyysejä-r-markdownilla.html#cb44-15" tabindex="-1"></a><span class="in">       data=autoja2)</span></span>
+<span id="cb44-16"><a href="analyysejä-r-markdownilla.html#cb44-16" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <div class="Rtable1"><table class="Rtable1"><caption>Table 1. Characteristics</caption>
 
 <thead>
@@ -1051,9 +1075,9 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <div id="plot" class="section level3 hasAnchor" number="14.3.1">
 <h3><span class="header-section-number">14.3.1</span> plot<a href="analyysejä-r-markdownilla.html#plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Komento <em>plot</em> kuuluu karvalakki-R:ään. Kokeile seuraavaa koodia:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb45-1"><a href="analyysejä-r-markdownilla.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r bensankulutus, echo=FALSE}</span></span>
-<span id="cb45-2"><a href="analyysejä-r-markdownilla.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="in">plot(autoja2$hevosvoima_eu, autoja2$bensankulutus_eu)</span></span>
-<span id="cb45-3"><a href="analyysejä-r-markdownilla.html#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb45-1"><a href="analyysejä-r-markdownilla.html#cb45-1" tabindex="-1"></a><span class="in">```{r bensankulutus, echo=FALSE}</span></span>
+<span id="cb45-2"><a href="analyysejä-r-markdownilla.html#cb45-2" tabindex="-1"></a><span class="in">plot(autoja2$hevosvoima_eu, autoja2$bensankulutus_eu)</span></span>
+<span id="cb45-3"><a href="analyysejä-r-markdownilla.html#cb45-3" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><img src="_main_files/figure-html/bensankulutus-1.png" width="672" /></p>
 </div>
 <div id="ggplot2" class="section level3 hasAnchor" number="14.3.2">
@@ -1062,21 +1086,21 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <pre><code>install.packages(&quot;ggplot2&quot;)</code></pre>
 <p><br></p>
 <p>Tämän jälkeen voit tehdä uudelleen edellä jo esitetyn kuvaajan <em>ggplot2</em>:lla, ja voit esimerkiksi lisätä mukaan regressiosovitteen seuraavasti:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb47-1"><a href="analyysejä-r-markdownilla.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r bensankulutus_ggplot2, echo=FALSE, message = FALSE}</span></span>
-<span id="cb47-2"><a href="analyysejä-r-markdownilla.html#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-3"><a href="analyysejä-r-markdownilla.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="in"># ggplot2 on jonkun verran &quot;puhelias&quot;, joten lisäsin</span></span>
-<span id="cb47-4"><a href="analyysejä-r-markdownilla.html#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="in"># option message = FALSE ylle; voit toki kokeilla</span></span>
-<span id="cb47-5"><a href="analyysejä-r-markdownilla.html#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="in"># sen pois ottamista.</span></span>
-<span id="cb47-6"><a href="analyysejä-r-markdownilla.html#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-7"><a href="analyysejä-r-markdownilla.html#cb47-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-8"><a href="analyysejä-r-markdownilla.html#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
-<span id="cb47-9"><a href="analyysejä-r-markdownilla.html#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-10"><a href="analyysejä-r-markdownilla.html#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(autoja2, aes(hevosvoima_eu, bensankulutus_eu)) +</span></span>
-<span id="cb47-11"><a href="analyysejä-r-markdownilla.html#cb47-11" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point() +</span></span>
-<span id="cb47-12"><a href="analyysejä-r-markdownilla.html#cb47-12" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method=&#39;lm&#39;)       # + theme_classic()</span></span>
-<span id="cb47-13"><a href="analyysejä-r-markdownilla.html#cb47-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-14"><a href="analyysejä-r-markdownilla.html#cb47-14" aria-hidden="true" tabindex="-1"></a><span class="in"># voit ottaa yllä olevan risuaidan pois, jos tahdot klassisen teeman</span></span>
-<span id="cb47-15"><a href="analyysejä-r-markdownilla.html#cb47-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb47-1"><a href="analyysejä-r-markdownilla.html#cb47-1" tabindex="-1"></a><span class="in">```{r bensankulutus_ggplot2, echo=FALSE, message = FALSE}</span></span>
+<span id="cb47-2"><a href="analyysejä-r-markdownilla.html#cb47-2" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="analyysejä-r-markdownilla.html#cb47-3" tabindex="-1"></a><span class="in"># ggplot2 on jonkun verran &quot;puhelias&quot;, joten lisäsin</span></span>
+<span id="cb47-4"><a href="analyysejä-r-markdownilla.html#cb47-4" tabindex="-1"></a><span class="in"># option message = FALSE ylle; voit toki kokeilla</span></span>
+<span id="cb47-5"><a href="analyysejä-r-markdownilla.html#cb47-5" tabindex="-1"></a><span class="in"># sen pois ottamista.</span></span>
+<span id="cb47-6"><a href="analyysejä-r-markdownilla.html#cb47-6" tabindex="-1"></a></span>
+<span id="cb47-7"><a href="analyysejä-r-markdownilla.html#cb47-7" tabindex="-1"></a></span>
+<span id="cb47-8"><a href="analyysejä-r-markdownilla.html#cb47-8" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb47-9"><a href="analyysejä-r-markdownilla.html#cb47-9" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="analyysejä-r-markdownilla.html#cb47-10" tabindex="-1"></a><span class="in">ggplot(autoja2, aes(hevosvoima_eu, bensankulutus_eu)) +</span></span>
+<span id="cb47-11"><a href="analyysejä-r-markdownilla.html#cb47-11" tabindex="-1"></a><span class="in">  geom_point() +</span></span>
+<span id="cb47-12"><a href="analyysejä-r-markdownilla.html#cb47-12" tabindex="-1"></a><span class="in">  geom_smooth(method=&#39;lm&#39;)       # + theme_classic()</span></span>
+<span id="cb47-13"><a href="analyysejä-r-markdownilla.html#cb47-13" tabindex="-1"></a></span>
+<span id="cb47-14"><a href="analyysejä-r-markdownilla.html#cb47-14" tabindex="-1"></a><span class="in"># voit ottaa yllä olevan risuaidan pois, jos tahdot klassisen teeman</span></span>
+<span id="cb47-15"><a href="analyysejä-r-markdownilla.html#cb47-15" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><img src="_main_files/figure-html/bensankulutus_ggplot2-1.png" width="672" /></p>
 <p><br></p>
 <p>Jos et pidä taustaväreistä tai ylipäänsä väreistä kuvaajassasi, näitä voi säätää loputtomiin helposti ja hyvinkin pikkutarkasti <em>ggplot2</em>:sta käytettäessä. Myös valmiita erilaisia teemoja on; voit halutessasi kokeilla miltä <em>theme_classic</em> näyttää poistamalla sen edestä risuaidan yltä esimerkkikoodista.</p>
@@ -1088,15 +1112,15 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <div id="yksinkertainen-regressio" class="section level3 hasAnchor" number="14.4.1">
 <h3><span class="header-section-number">14.4.1</span> Yksinkertainen regressio<a href="analyysejä-r-markdownilla.html#yksinkertainen-regressio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Aloitamme ns. yksinkertaisella lineaarisella regressiolla:</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb48-1"><a href="analyysejä-r-markdownilla.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r simppeliregressio, echo=FALSE}</span></span>
-<span id="cb48-2"><a href="analyysejä-r-markdownilla.html#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-3"><a href="analyysejä-r-markdownilla.html#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="in"># Jotta koodi toimii, vaaditaan kohta data = . mikä tarkoittaa sitä,</span></span>
-<span id="cb48-4"><a href="analyysejä-r-markdownilla.html#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="in"># että &quot;putkesta&quot; läpi tullut data otetaan regressiomalliin mukaan.</span></span>
-<span id="cb48-5"><a href="analyysejä-r-markdownilla.html#cb48-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-6"><a href="analyysejä-r-markdownilla.html#cb48-6" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
-<span id="cb48-7"><a href="analyysejä-r-markdownilla.html#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu, data = .) %&gt;%</span></span>
-<span id="cb48-8"><a href="analyysejä-r-markdownilla.html#cb48-8" aria-hidden="true" tabindex="-1"></a><span class="in">          summary()</span></span>
-<span id="cb48-9"><a href="analyysejä-r-markdownilla.html#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb48-1"><a href="analyysejä-r-markdownilla.html#cb48-1" tabindex="-1"></a><span class="in">```{r simppeliregressio, echo=FALSE}</span></span>
+<span id="cb48-2"><a href="analyysejä-r-markdownilla.html#cb48-2" tabindex="-1"></a></span>
+<span id="cb48-3"><a href="analyysejä-r-markdownilla.html#cb48-3" tabindex="-1"></a><span class="in"># Jotta koodi toimii, vaaditaan kohta data = . mikä tarkoittaa sitä,</span></span>
+<span id="cb48-4"><a href="analyysejä-r-markdownilla.html#cb48-4" tabindex="-1"></a><span class="in"># että &quot;putkesta&quot; läpi tullut data otetaan regressiomalliin mukaan.</span></span>
+<span id="cb48-5"><a href="analyysejä-r-markdownilla.html#cb48-5" tabindex="-1"></a></span>
+<span id="cb48-6"><a href="analyysejä-r-markdownilla.html#cb48-6" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
+<span id="cb48-7"><a href="analyysejä-r-markdownilla.html#cb48-7" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu, data = .) %&gt;%</span></span>
+<span id="cb48-8"><a href="analyysejä-r-markdownilla.html#cb48-8" tabindex="-1"></a><span class="in">          summary()</span></span>
+<span id="cb48-9"><a href="analyysejä-r-markdownilla.html#cb48-9" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = bensankulutus_eu ~ hevosvoima_eu, data = .)
@@ -1127,22 +1151,22 @@ Pyysimme “common” tunnuslukuja - näet tähän alle tulostuneesta taulukosta
 <pre><code>install.packages(&quot;broom&quot;)</code></pre>
 <p><br></p>
 <p>Tämän jälkeen voit ajaa seuraavan koodin:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb51-1"><a href="analyysejä-r-markdownilla.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r simppeliregressio_tidy, echo=FALSE}</span></span>
-<span id="cb51-2"><a href="analyysejä-r-markdownilla.html#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-3"><a href="analyysejä-r-markdownilla.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="in"># Huom. voit laittaa library(broom) -komennon myös suoraan r setup -chunkiisi,</span></span>
-<span id="cb51-4"><a href="analyysejä-r-markdownilla.html#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="in"># jolloin sitä ei tarvitse jatkuvasti toistella:</span></span>
-<span id="cb51-5"><a href="analyysejä-r-markdownilla.html#cb51-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-6"><a href="analyysejä-r-markdownilla.html#cb51-6" aria-hidden="true" tabindex="-1"></a><span class="in">library(broom)</span></span>
-<span id="cb51-7"><a href="analyysejä-r-markdownilla.html#cb51-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-8"><a href="analyysejä-r-markdownilla.html#cb51-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-9"><a href="analyysejä-r-markdownilla.html#cb51-9" aria-hidden="true" tabindex="-1"></a><span class="in"># Jotta koodi toimii, vaaditaan kohta data = . mikä tarkoittaa sitä,</span></span>
-<span id="cb51-10"><a href="analyysejä-r-markdownilla.html#cb51-10" aria-hidden="true" tabindex="-1"></a><span class="in"># että &quot;putkesta&quot; läpi tullut data otetaan regressiomalliin mukaan.</span></span>
-<span id="cb51-11"><a href="analyysejä-r-markdownilla.html#cb51-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-12"><a href="analyysejä-r-markdownilla.html#cb51-12" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
-<span id="cb51-13"><a href="analyysejä-r-markdownilla.html#cb51-13" aria-hidden="true" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu, data = .) %&gt;%</span></span>
-<span id="cb51-14"><a href="analyysejä-r-markdownilla.html#cb51-14" aria-hidden="true" tabindex="-1"></a><span class="in">          tidy %&gt;% </span></span>
-<span id="cb51-15"><a href="analyysejä-r-markdownilla.html#cb51-15" aria-hidden="true" tabindex="-1"></a><span class="in">          kable</span></span>
-<span id="cb51-16"><a href="analyysejä-r-markdownilla.html#cb51-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb51-1"><a href="analyysejä-r-markdownilla.html#cb51-1" tabindex="-1"></a><span class="in">```{r simppeliregressio_tidy, echo=FALSE}</span></span>
+<span id="cb51-2"><a href="analyysejä-r-markdownilla.html#cb51-2" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="analyysejä-r-markdownilla.html#cb51-3" tabindex="-1"></a><span class="in"># Huom. voit laittaa library(broom) -komennon myös suoraan r setup -chunkiisi,</span></span>
+<span id="cb51-4"><a href="analyysejä-r-markdownilla.html#cb51-4" tabindex="-1"></a><span class="in"># jolloin sitä ei tarvitse jatkuvasti toistella:</span></span>
+<span id="cb51-5"><a href="analyysejä-r-markdownilla.html#cb51-5" tabindex="-1"></a></span>
+<span id="cb51-6"><a href="analyysejä-r-markdownilla.html#cb51-6" tabindex="-1"></a><span class="in">library(broom)</span></span>
+<span id="cb51-7"><a href="analyysejä-r-markdownilla.html#cb51-7" tabindex="-1"></a></span>
+<span id="cb51-8"><a href="analyysejä-r-markdownilla.html#cb51-8" tabindex="-1"></a></span>
+<span id="cb51-9"><a href="analyysejä-r-markdownilla.html#cb51-9" tabindex="-1"></a><span class="in"># Jotta koodi toimii, vaaditaan kohta data = . mikä tarkoittaa sitä,</span></span>
+<span id="cb51-10"><a href="analyysejä-r-markdownilla.html#cb51-10" tabindex="-1"></a><span class="in"># että &quot;putkesta&quot; läpi tullut data otetaan regressiomalliin mukaan.</span></span>
+<span id="cb51-11"><a href="analyysejä-r-markdownilla.html#cb51-11" tabindex="-1"></a></span>
+<span id="cb51-12"><a href="analyysejä-r-markdownilla.html#cb51-12" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
+<span id="cb51-13"><a href="analyysejä-r-markdownilla.html#cb51-13" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu, data = .) %&gt;%</span></span>
+<span id="cb51-14"><a href="analyysejä-r-markdownilla.html#cb51-14" tabindex="-1"></a><span class="in">          tidy %&gt;% </span></span>
+<span id="cb51-15"><a href="analyysejä-r-markdownilla.html#cb51-15" tabindex="-1"></a><span class="in">          kable</span></span>
+<span id="cb51-16"><a href="analyysejä-r-markdownilla.html#cb51-16" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p><br>
 Kuten alla näet, tidy ja kable tuottavat yhteistyönä kauniimpaa jälkeä eteenpäin jaettavaksi:</p>
 <table>
@@ -1176,15 +1200,15 @@ Kuten alla näet, tidy ja kable tuottavat yhteistyönä kauniimpaa jälkeä etee
 <div id="multippeli-regressio" class="section level3 hasAnchor" number="14.4.3">
 <h3><span class="header-section-number">14.4.3</span> Multippeli regressio<a href="analyysejä-r-markdownilla.html#multippeli-regressio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Jatketaan jo edellä esitellyllä lineaarisella mallilla, mutta lisätään vielä mukaan kovariaateiksi massa ja vaihteisto. Tällöin kyseessä on multippeli lineaarinen regressio.</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb52-1"><a href="analyysejä-r-markdownilla.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r multippeliregressio, echo=FALSE}</span></span>
-<span id="cb52-2"><a href="analyysejä-r-markdownilla.html#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-3"><a href="analyysejä-r-markdownilla.html#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(broom)</span></span>
-<span id="cb52-4"><a href="analyysejä-r-markdownilla.html#cb52-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-5"><a href="analyysejä-r-markdownilla.html#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
-<span id="cb52-6"><a href="analyysejä-r-markdownilla.html#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu + massa_eu + vaihteisto, data = .) %&gt;%</span></span>
-<span id="cb52-7"><a href="analyysejä-r-markdownilla.html#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="in">          tidy %&gt;%</span></span>
-<span id="cb52-8"><a href="analyysejä-r-markdownilla.html#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="in">          kable</span></span>
-<span id="cb52-9"><a href="analyysejä-r-markdownilla.html#cb52-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb52-1"><a href="analyysejä-r-markdownilla.html#cb52-1" tabindex="-1"></a><span class="in">```{r multippeliregressio, echo=FALSE}</span></span>
+<span id="cb52-2"><a href="analyysejä-r-markdownilla.html#cb52-2" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="analyysejä-r-markdownilla.html#cb52-3" tabindex="-1"></a><span class="in">library(broom)</span></span>
+<span id="cb52-4"><a href="analyysejä-r-markdownilla.html#cb52-4" tabindex="-1"></a></span>
+<span id="cb52-5"><a href="analyysejä-r-markdownilla.html#cb52-5" tabindex="-1"></a><span class="in">autoja2 %&gt;%</span></span>
+<span id="cb52-6"><a href="analyysejä-r-markdownilla.html#cb52-6" tabindex="-1"></a><span class="in">          lm(bensankulutus_eu ~ hevosvoima_eu + massa_eu + vaihteisto, data = .) %&gt;%</span></span>
+<span id="cb52-7"><a href="analyysejä-r-markdownilla.html#cb52-7" tabindex="-1"></a><span class="in">          tidy %&gt;%</span></span>
+<span id="cb52-8"><a href="analyysejä-r-markdownilla.html#cb52-8" tabindex="-1"></a><span class="in">          kable</span></span>
+<span id="cb52-9"><a href="analyysejä-r-markdownilla.html#cb52-9" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <table>
 <thead>
 <tr class="header">

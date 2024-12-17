@@ -7,7 +7,7 @@ output:
       toc:
         scroll_highlight: yes
         before: |
-          <li><a href="https://vldesign.kapsi.fi/r-guide-in-english/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
+          <li><a href="https://r-guide-in-english.netlify.app/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
         after: |
           <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
 author: Ville Langén
@@ -42,7 +42,7 @@ Disclaimer: olen itse puhdas kliinikko, ja nämä verkkosivut heijastavat lähin
 
 <br>
 
-Tämä opas on saatavilla myös [englanniksi](https://vldesign.kapsi.fi/r-guide-in-english/): this short guide is available also [in English](https://vldesign.kapsi.fi/r-guide-in-english/). 
+Tämä opas on saatavilla myös [englanniksi](https://r-guide-in-english.netlify.app/): this short guide is available also [in English](https://r-guide-in-english.netlify.app/). 
 
 <br>
 
