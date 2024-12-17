@@ -335,23 +335,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## Call:
 ## coxph(formula = Surv(time, status) ~ gender, data = testidatamme)
 ## 
-##   n= 2000000, number of events= 999649 
+##   n= 2000000, number of events= 1e+06 
 ## 
-##             coef exp(coef)  se(coef)      z Pr(&gt;|z|)
-## gender -0.002548  0.997456  0.002000 -1.274    0.203
+##             coef exp(coef)  se(coef)     z Pr(&gt;|z|)
+## gender 8.911e-05 1.000e+00 2.000e-03 0.045    0.964
 ## 
 ##        exp(coef) exp(-coef) lower .95 upper .95
-## gender    0.9975      1.003    0.9936     1.001
+## gender         1     0.9999    0.9962     1.004
 ## 
 ## Concordance= 0.5  (se = 0 )
-## Likelihood ratio test= 1.62  on 1 df,   p=0.2
-## Wald test            = 1.62  on 1 df,   p=0.2
-## Score (logrank) test = 1.62  on 1 df,   p=0.2</code></pre>
+## Likelihood ratio test= 0  on 1 df,   p=1
+## Wald test            = 0  on 1 df,   p=1
+## Score (logrank) test = 0  on 1 df,   p=1</code></pre>
 <div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="rstudio-ja-ssh.html#cb57-1" tabindex="-1"></a>end_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
 <span id="cb57-2"><a href="rstudio-ja-ssh.html#cb57-2" tabindex="-1"></a>end_time <span class="sc">-</span> start_time</span></code></pre></div>
-<pre><code>## Time difference of 1.704992 secs</code></pre>
+<pre><code>## Time difference of 1.675455 secs</code></pre>
 <p>Mallin tuloksista voimme ensinnäkin nähdä, että sukupuolella ei ollut vaikutusta päätetapahtumaan, koska kaikki data oli kuvitteellista ja umpimähkäistä. Tulosten alla näemme, että prosessiin kului allekirjoittaneen tietokoneella seuraava määrä sekunteja:</p>
-<pre><code>## Time difference of 1.704992 secs</code></pre>
+<pre><code>## Time difference of 1.675455 secs</code></pre>
 <p>Voimme vertailun vuoksi ajaa samat analyysit Turun yliopiston Linux-serverillä seuraavasti.</p>
 <p>Kirjoita terminaaliin <code>ssh käyttäjänimesi@linux.utu.fi</code> ja paina enteriä:</p>
 <p><img src="images/linux1.jpg" /></p>
